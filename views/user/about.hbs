@@ -1,0 +1,138 @@
+{{> plain-header}}
+{{> secondary-resource-header}}
+
+<main class="mdl-layout__content">
+    <div class="page-content">
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--6-col">
+                <div class="about-rectangle">
+                    <div class="inline p15">
+                        <div class="image-cropper">
+                            <img src="{{item.imagePath}}" alt="" class="portrait">
+                        </div>
+                        <h2 class="p15 ml15 mw300">
+                            {{item.first_name}} {{item.last_name}}
+                            <br>
+                            <span>Apprentice</span>
+                        </h2>
+                    </div>
+                    <hr>
+                    <div>
+                        <i class="material-icons ml100">home</i>
+                        Joes Auto Shoppe
+                        <br>
+                        <i class="material-icons ml100">room</i>
+                        {{item.home_address_line1}}, {{item.home_address_line2}}, {{item.postal_code}}, {{item.address_state}}
+                        <br>
+                        <i class="material-icons ml100">schedule</i>
+                        Available every 2 days
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="mdl-cell mdl-cell--6-col"></div>
+        </div>
+
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--6-col">
+                <div class="about-rectangle">
+                    <div class="p15">
+                        <h3>About</h3>
+                        <hr>
+                        {{item.description}}
+                    </div>
+                </div>
+
+            </div>
+            <div class="mdl-cell mdl-cell--6-col"></div>
+        </div>
+
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--6-col">
+                <div class="about-rectangle">
+                    <div class="p15">
+                        <h3>Portfolio</h3>
+                        <hr>
+                        {{#each project_item}}
+                            <div class="inline">
+                                <img src="{{portfolio_one_imagePath}}" alt="" class="image-about">
+                            </div>
+                        {{/each}}
+                        <br>
+                        <br>
+                        {{#each project_item}}
+                            <div class="inline w150">
+                                <a href="/data/{{id}}">{{portfolio_title}}</a>
+                            </div>
+                        {{/each}}
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="mdl-cell mdl-cell--6-col"></div>
+        </div>
+
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--6-col">
+                <div class="about-rectangle">
+                    <div class="p15">
+                        <h3>Experience and Key Accomplishments</h3>
+                        <hr>
+                        {{item.description}}
+                    </div>
+                </div>
+            </div>
+            <div class="mdl-cell mdl-cell--6-col"></div>
+        </div>
+
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--6-col">
+                <div class="about-rectangle">
+                    <div class="p15">
+                        <h3>Skills and Qualifications</h3>
+                        <hr>
+                        {{item.provider_one}}  {{item.qualification_one}}
+                        <br>
+                        {{item.provider_two}}  {{item.qualification_two}}
+                        <br>
+                        {{item.provider_three}}  {{item.qualification_three}}
+                        <br>
+                        {{item.provider_four}}  {{item.qualification_four}}
+                    </div>
+                </div>
+            </div>
+            <div class="mdl-cell mdl-cell--6-col"></div>
+        </div>
+
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--6-col">
+                <div class="about-rectangle">
+                    <div class="p15">
+                        <h3>Licences and Visas</h3>
+                        <hr>
+                        {{item.visa_status}}
+                        <br>
+                        {{item.licence_one}}  {{item.licence_one_expiry}}
+                        <br>
+                        {{item.licence_two}}
+                    </div>
+                </div>
+            </div>
+            <div class="mdl-cell mdl-cell--6-col"></div>
+        </div>
+
+        <!-- Your content goes here -->
+    </div>
+</main>
+
+<!-- this final div closes off the div started in the header.hbs -->
+</div>
+
+
+
+
+
+
+

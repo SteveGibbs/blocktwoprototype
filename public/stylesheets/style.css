@@ -1,0 +1,210 @@
+
+
+body {
+
+}
+
+a {
+  color: #00B7FF;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 36px;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+h5 {
+  font-family: "Gotham Book";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+}
+
+label.group{
+  line-height:40px;
+  display:inline-block;
+  padding:0 10px;
+  font-size:14px;
+}
+label.group input{
+  font-family: 'Gotham Book', sans-serif;
+  background-color:transparent;
+  border: none;
+  vertical-align: middle;
+}
+
+.border {
+  border: 5px;
+}
+
+.block2-btn-primary {
+  color: #FFFFFF;
+  background-color: #192C3F;
+  width: 322px;
+  border-radius: 30px;
+  line-height: 60px;
+  font-size: 14px;
+  font-family: Gotham;
+}
+
+
+.block-button {
+  background-color: #FFFFFF;
+  color: #192C3F;
+  height: 50px;
+  width: 324px;
+  border-radius: 24px;
+  border-color: #192C3F;
+  border: 1px solid;
+}
+
+.block-area {
+  background-color: #FFFFFF;
+  color: #192C3F;
+  height:162px;
+  width: 324px;
+  border-radius: 24px;
+  border-color: #192C3F;
+  border: 1px solid;
+}
+
+.right {
+  float: right !important;
+}
+
+.large {
+  height: 48px;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.p15 {
+  padding:15px;
+}
+
+.p20 {
+  padding: 20px;
+}
+
+.w150 {
+  width: 150px;
+}
+
+.h40 {
+  height: 40px;
+}
+
+.mb0 {
+  margin-bottom: 0px;
+}
+
+.ml100 {
+  margin-left: 100px;
+}
+
+.ml15 {
+  margin-left: 15px;
+}
+
+.ml200 {
+  margin-left: 200px;
+}
+
+.mw300 {
+  max-width: 300px;
+}
+
+.panel {
+  display: none;
+}
+
+.secondary-header {
+  line-height: 40px;
+  border-bottom: 1px solid lightslategray;
+
+}
+
+.leftspacer {
+  margin-left: 5%;
+}
+
+.middle{
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+.about-rectangle {
+  min-height: auto;
+  min-width: auto;
+  border: 1px solid #D0D8E8;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+  margin-left: 11%;
+}
+
+.inline {
+  display: inline-flex;
+}
+
+.block {
+  display: block;
+}
+
+.image-cropper {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.image-about {
+  height: 150px;
+  width: 150px;
+  overflow:hidden;
+}
+.portfolio-image-cropper {
+  width:400px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+}
+
+.portrait {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
+.image-crop-half {
+  width: 48vw;
+  height: auto;
+}

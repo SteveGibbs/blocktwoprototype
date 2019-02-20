@@ -1,0 +1,73 @@
+{{> plain-header}}
+{{> secondary-resource-header}}
+
+<main class="mdl-layout__content">
+    <div class="page-content">
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--1-col"></div>
+            <div class="mdl-cell mdl-cell--5-col">
+                <p>
+                    {{#each portfolios}}
+                        {{#each this}}
+                            <h3><a href="/data/{{id}}">{{portfolio_title}}</a></h3>
+                            <br>
+                            <img src="{{portfolio_one_imagePath}}" alt="" class="portfolio-image-cropper">
+                            <br>
+                            <br>
+                            <p>
+                                {{portfolio_one_description}}
+                            </p>
+                            <br>
+                        {{/each}}
+                    {{/each}}
+                    </p>
+                    <br>
+            </div>
+            <div class="mdl-cell mdl-cell--6-col">
+                <div class="ml100">
+                    <h3>My Portfolio</h3>
+                    {{#if hasErrors}}
+                        <div class="alert alert-danger">
+                            {{# each messages}}
+                                <p>{{this}}</p>
+                            {{/each}}
+                        </div>
+                    {{/if}}
+                    <form action="/user/insert" method="post">
+                        <div class="form-group">
+                            <label for="portfolio_title">Project</label>
+                            <br>
+                            <input type="text" id="portfolio_title" name="portfolio_title" value="{{item.portfolio_title}}" class="mdl-button block-button">
+                        </div>
+                        <div class="form-group">
+                            <label for="portfolio_one_description">Description</label>
+                            <br>
+                            <input type="textarea" id="portfolio_one_description" name="portfolio_one_description" value="{{item.portfolio_one_description}}" rows="6" class="mdl-button block-area">
+                        </div>
+                        <div class="form-group">
+                            <label for="portfolio_one_imagePath">Image</label>
+                            <br>
+                            <input type="text" id="portfolio_one_imagePath" name="portfolio_one_imagePath" value="{{item.portfolio_one_description}}" class="mdl-button block-button">
+                        </div>
+                        <button type="submit" class="block2-btn-primary">Add project</button>
+                    </form>
+
+
+
+
+
+                    <br>
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Your content goes here -->
+    </div>
+</main>
+
+<!-- this final div closes off the div started in the header.hbs -->
+</div>

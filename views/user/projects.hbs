@@ -1,0 +1,82 @@
+{{> plain-header}}
+{{> secondary-resource-header}}
+
+<main class="mdl-layout__content">
+    <div class="page-content">
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--1-col"></div>
+            <div class="mdl-cell mdl-cell--5-col">
+                <h2>My Project</h2>
+                <p>
+                <h3>
+                {{item.portfolio_title}}
+                </h3>
+                <br>
+                <img src="{{item.portfolio_one_imagePath}}" alt="" class="portfolio-image-cropper">
+                <br>
+                <br>
+                {{item.portfolio_one_description}}
+                <br>
+                {{item.portfolio_one_imagePath}}
+
+                </p>
+            </div>
+            <div class="mdl-cell mdl-cell--6-col">
+
+            </div>
+        </div>
+        <br>
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--1-col">
+            </div>
+            <div class="mdl-cell mdl-cell--5-col">
+                <h3>Edit Data</h3>
+                <br>
+                <form action="/update" method="post">
+                        <div class="form-group">
+                            <label for="id">ID</label>
+                            <input type="text" class = "form-control" id="id" name="id" value="{{item.id}}">
+                        </div>
+                        <div class="form-group">
+                            <label for="portfolio_title">Title</label>
+                            <input type="text" class="form-control" id="portfolio_title" name="portfolio_title" value="{{item.portfolio_title}}">
+                        </div>
+                        <div class="form-group">
+                            <label for="portfolio_one_description">Description</label>
+                            <input type="textarea" class="form-control" rows="6" id="portfolio_one_description" name="portfolio_one_description" value="{{item.portfolio_one_description}}">
+                        </div>
+                        <div class="form-group">
+                            <label for="portfolio_one_imagePath">Image</label>
+                            <input type="text" class="form-control" id="portfolio_one_imagePath" name="portfolio_one_imagePath" value="{{item.portfolio_one_imagePath}}">
+                        </div>
+                        <button type="submit" class="block2-btn-primary">Update</button>
+                    <br>
+                </form>
+            </div>
+            <div class="mdl-cell mdl-cell--6-col">
+            </div>
+        </div>
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--1-col">
+            </div>
+            <div class="mdl-cell mdl-cell--5-col">
+                <h3>Delete Project</h3>
+                <br>
+                <form action="/delete" method="post">
+                        <div class="form-group">
+                            <label for="id">ID</label>
+                            <input type="text" class = "form-control" id="id" name="id" value="{{item.id}}">
+                        </div>
+                    <br>
+                    <button type="submit" class="block2-btn-primary">Delete</button>
+                </form>
+            </div>
+            <div class="mdl-cell mdl-cell--6-col">
+            </div>
+        </div>
+        <!-- Your content goes here -->
+    </div>
+</main>
+
+<!-- this final div closes off the div started in the header.hbs -->
+</div>
