@@ -28,7 +28,6 @@ router.get('/data/:id', function(req, res, next){
     });
   };
   getObject();
-  console.log("getObject function has been called");
 });
 
 router.post('/update', function(req, res, next){
@@ -67,6 +66,53 @@ router.post('/delete', function(req, res, next){
       // assert.equal(null, err);
       console.log('item deleted');
       res.redirect('/user/portfolio');
+
+    });
+  }
+  deleteObject();
+});
+
+//Admin console CRUD for user management
+
+router.post('/update_user', function(req, res, next){
+
+  var item = {
+    username: req.body.username,
+    email: req.body.email
+
+  };
+
+  var id = req.body.id;
+
+  var editObject = function() {
+    //assert.equal(null, err);
+    //pass the id into the objectId function to transform it into an objectId that Mongo recognises as the
+    // first parameter then use $set to say what the new data should be
+    //$set just updates only the selected fields;
+    User.updateOne({'_id': objectId(id)}, {$set: item}, function (err, result) {
+
+      // assert.equal(null, err);
+      console.log('item updated');
+      res.redirect('/admin');
+
+    });
+  }
+  editObject();
+
+});
+
+
+
+router.post('/delete_user', function(req, res, next){
+  var id = req.body.id;
+  console.log("this is the id" + id);
+
+  var deleteObject = function() {
+    //assert.equal(null, err);
+    User.deleteOne({'_id': objectId(id)}, function (err, user) {
+      // assert.equal(null, err);
+      console.log('item deleted');
+      res.redirect('/admin');
 
     });
   }

@@ -1,0 +1,68 @@
+{{> plain-header}}
+
+<main class="mdl-layout__content">
+    <div class="page-content">
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--6-col">
+                <h2>Admin Console</h2>
+                <h3>List of Users</h3>
+
+                <p> {{#each item}}</p>
+
+                <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+                    <thead>
+                    <tr>
+                        <th class="mdl-data-table__cell--non-numeric">Username</th>
+                        <th>Email</th>
+                        <th>ID</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="mdl-data-table__cell--non-numeric">{{this.username}}</td>
+                        <td>{{this.email}}</td>
+                        <td>{{this._id}}</td>
+                        <td><form action="/update_user" method="post">
+                            <div class="form-group">
+                                <label for="id">ID</label>
+                                <input type="text" class = "form-control" id="id" name="id" value="{{this.id}}">
+                            </div>
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <input type="text" class="form-control" id="username" name="username" value="{{this.username}}">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Description</label>
+                                <input type="textarea" class="form-control" rows="6" id="email" name="email" value="{{this.email}}">
+                            </div>
+                            <button type="submit" class="block2-btn-primary">Update</button>
+                            <br>
+                        </form></td>
+                        <td><form action="/delete_user" method="post">
+                            <div class="form-group">
+                                <label for="id">ID</label>
+                                <input type="text" class = "form-control" id="id" name="id" value="{{this._id}}">
+                            </div>
+                            <br>
+                            <button type="submit" class="block2-btn-primary">Delete</button>
+                        </form>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                {{/each}}
+
+                <img src="../images/resources/automotive-car-car-engine-1409999.jpg" alt="" class="image-crop-half">
+            </div>
+
+        </div>
+
+        <!-- Your content goes here -->
+    </div>
+</main>
+
+<!-- this final div closes off the div started in the header.hbs -->
+</div>

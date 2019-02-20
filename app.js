@@ -22,6 +22,7 @@ var indexRouter = require('./routes/index');
 var quoteRouter = require('./routes/quote');
 var planRouter = require('./routes/plan');
 var userRouter = require('./routes/user');
+var adminRouter = require('./routes/admin');
 
 var app = express();
 
@@ -66,6 +67,7 @@ app.use('/quote', quoteRouter);
 app.use('/user', userRouter);  //ordering is important as you want it to look for /user first to go to the user routes
 // before defaulting to the / route.  Otherwise if it finds / it will always go to index route first.
 app.use('/plan', planRouter);
+app.use('/admin', adminRouter);
 app.use('/', indexRouter);
 
 // catch 404 and forward to error handler
