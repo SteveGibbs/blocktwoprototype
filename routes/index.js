@@ -54,7 +54,11 @@ router.post('/update_site', function(req, res, next){
   var item = {
     site_name: req.body.site_name,
     site_description: req.body.site_description,
-    site_imagePath: req.body.site_imagePath
+    site_imagePath: req.body.site_imagePath,
+    site_address_line1: req.body.site_address_line1,
+    site_address_line2: req.body.site_address_line2,
+    site_postal_code: req.body.site_postal_code,
+    site_address_state: req.body.site_address_state
   };
 
   var id = req.body.id;
@@ -68,7 +72,7 @@ router.post('/update_site', function(req, res, next){
 
       // assert.equal(null, err);
       console.log('item updated');
-      res.redirect('/site/site');
+      res.redirect('/site');
 
     });
   }

@@ -9,15 +9,14 @@
                 <h2>My Site</h2>
                 <p>
                 <h3>
-                    {{item.name}}
+                    {{item.site_name}}
                 </h3>
+                <p>{{item.site_address_line1}}, {{item.site_address_line2}}, {{item.site_postal_code}}, {{item.site_address_state}}</p>
                 <br>
                 <img src="{{item.site_imagePath}}" alt="" class="portfolio-image-cropper">
                 <br>
                 <br>
                 {{item.site_description}}
-                <br>
-                {{item.site_imagePath}}
 
                 </p>
             </div>
@@ -48,6 +47,22 @@
                     <div class="form-group">
                         <label for="site_imagePath">Image</label>
                         <input type="text" class="form-control" id="site_imagePath" name="site_imagePath" value="{{item.site_imagePath}}">
+                    </div>
+                    <div class="form-group">
+                        <label for="site_address_line1">Address Line 1</label>
+                        <input type="text" class="form-control" id="site_address_line1" name="site_address_line1" value="{{item.site_address_line1}}">
+                    </div>
+                    <div class="form-group">
+                        <label for="site_address_line2">Address Line 2</label>
+                        <input type="text" class="form-control" id="site_address_line2" name="site_address_line2" value="{{item.site_address_line2}}">
+                    </div>
+                    <div class="form-group">
+                        <label for="site_postal_code">Postcode</label>
+                        <input type="text" class="form-control" id="site_postal_code" name="site_postal_code" value="{{item.site_postal_code}}">
+                    </div>
+                    <div class="form-group">
+                        <label for="site_address_state">State</label>
+                        <input type="text" class="form-control" id="site_address_state" name="site_address_state" value="{{item.site_address_state}}">
                     </div>
                     <button type="submit" class="block2-btn-primary">Update</button>
                     <br>

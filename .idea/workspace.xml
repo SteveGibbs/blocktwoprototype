@@ -2,33 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="600e58db-8efd-4723-bbd4-3fd73afb5058" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/models/site.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/resources/aaron-huber-542345-unsplash.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/resources/auction-automotive-cars-175568.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/resources/banter-snaps-1346648-unsplash.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/resources/fancycrave-252347-unsplash.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/resources/nathan-dumlao-1176781-unsplash.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/resources/neonbrand-358354-unsplash.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/resources/neonbrand-716635-unsplash.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/resources/oli-woodman-1194990-unsplash.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/resources/palash-jain-470221-unsplash.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/resources/vance-osterhout-798903-unsplash.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/site.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/partials/secondary-site-header.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/site/about.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/site/equipment.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/site/infrastructure.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/site/profile.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/site/site.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/resources/4wd-4wheels-4x4-761820.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/resources/4wd-4wheels-4x4-761820.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/resources/adult-automotive-blur-1131218.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/resources/adult-automotive-blur-1131218.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/resources/auto-automobile-automotive-923022.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/resources/auto-automobile-automotive-923022.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/resources/automobile-automotive-car-159293.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/resources/automobile-automotive-car-159293.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/resources/automotive-car-car-engine-1409999.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/resources/automotive-car-car-engine-1409999.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/users.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/users.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/secondary-site-header.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/secondary-site-header.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/site/site.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/site/site.hbs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,38 +41,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/site/about.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+            <state relative-caret-position="345">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/site.js">
+        <entry file="file://$PROJECT_DIR$/views/partials/secondary-site-header.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-408">
-              <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+            <state relative-caret-position="60">
+              <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/site/site.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="20" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="21" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="125" column="30" lean-forward="true" selection-start-line="125" selection-start-column="30" selection-end-line="125" selection-end-column="30" />
+            <state relative-caret-position="147">
+              <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -111,19 +78,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/user.js">
+        <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="11" column="11" selection-start-line="10" selection-start-column="4" selection-end-line="15" selection-end-column="34" />
+            <state relative-caret-position="138">
+              <caret line="60" column="31" lean-forward="true" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/user.js">
+        <entry file="file://$PROJECT_DIR$/models/portfolio.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-417">
-              <caret line="4" column="89" selection-start-line="4" selection-end-line="4" selection-end-column="89" />
+            <state relative-caret-position="135">
+              <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/user/projects.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="21" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="12" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -139,7 +115,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>isLoggedIn</find>
       <find>csrfToken</find>
       <find>checkBody</find>
       <find>signup</find>
@@ -169,6 +144,7 @@
       <find>/data/{{id}}</find>
       <find>/updat</find>
       <find>/dele</find>
+      <find>update</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/views</dir>
@@ -216,14 +192,14 @@
         <option value="$PROJECT_DIR$/routes/admin.js" />
         <option value="$PROJECT_DIR$/views/admin/users.hbs" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/views/partials/secondary-site-header.hbs" />
         <option value="$PROJECT_DIR$/views/site/equipment.hbs" />
         <option value="$PROJECT_DIR$/views/site/profile.hbs" />
         <option value="$PROJECT_DIR$/routes/site.js" />
         <option value="$PROJECT_DIR$/models/site.js" />
+        <option value="$PROJECT_DIR$/views/site/about.hbs" />
+        <option value="$PROJECT_DIR$/views/partials/secondary-site-header.hbs" />
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/views/site/site.hbs" />
-        <option value="$PROJECT_DIR$/views/site/about.hbs" />
       </list>
     </option>
   </component>
@@ -266,13 +242,6 @@
               <item name="blocktest" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blocktest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blocktest" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blocktest" type="b2602c69:ProjectViewProjectNode" />
@@ -379,18 +348,18 @@
       <workItem from="1550203937611" duration="873000" />
       <workItem from="1550204917021" duration="8709000" />
       <workItem from="1550370057702" duration="29701000" />
-      <workItem from="1550622503019" duration="26085000" />
+      <workItem from="1550622503019" duration="27185000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="216928000" />
+    <option name="totallyTimeSpent" value="218028000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="185" y="25" width="1142" height="778" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3890909" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14272727" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -405,7 +374,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.31924197" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.31924197" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -606,13 +575,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/partials/secondary-site-header.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="43" lean-forward="true" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/site/infrastructure.hbs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -630,24 +592,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/portfolio.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/admin/users.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="571">
           <caret line="56" selection-start-line="56" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/user/projects.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="65" column="26" selection-end-line="82" />
         </state>
       </provider>
     </entry>
@@ -668,13 +616,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/site.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/site.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-408">
@@ -689,24 +630,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="125" column="30" lean-forward="true" selection-start-line="125" selection-start-column="30" selection-end-line="125" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/user/profile.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4020">
           <caret line="268" lean-forward="true" selection-end-line="268" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/site/site.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="20" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="21" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -724,10 +651,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/models/portfolio.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/user/projects.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="21" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/site/about.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+        <state relative-caret-position="345">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/partials/secondary-site-header.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="60" column="31" lean-forward="true" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/site.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/site/site.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
         </state>
       </provider>
     </entry>
