@@ -3,6 +3,7 @@ var router = express.Router();
 var objectId = require('mongodb').ObjectID;  // mongo ID is an object ID not a string ID.
 var User = require('../models/user');
 var Portfolio = require('../models/portfolio');
+var Site = require('../models/site');
 
 //var url = process.env.MONGODB_URI;
 var url = 'localhost:27017/blocktwo';
@@ -29,6 +30,52 @@ router.get('/data/:id', function(req, res, next){
   };
   getObject();
 });
+
+router.get('/site/:id', function(req, res, next){
+  var uniqueid = req.params.id;
+  var result = {};
+  //assert.equal(null, err);
+  var getObject = function() {
+    Site.findOne({'_id': objectId(uniqueid)}, function (err, doc) {
+      //assert.equal(null, err);
+      console.log('item found');
+      console.log(uniqueid);
+      console.log(doc);
+      console.log(doc.title);
+      result = doc;
+      res.render('site/site', {item: result});
+    });
+  };
+  getObject();
+});
+
+router.post('/update_site', function(req, res, next){
+
+  var item = {
+    site_name: req.body.site_name,
+    site_description: req.body.site_description,
+    site_imagePath: req.body.site_imagePath
+  };
+
+  var id = req.body.id;
+
+  var editObject = function() {
+    //assert.equal(null, err);
+    //pass the id into the objectId function to transform it into an objectId that Mongo recognises as the
+    // first parameter then use $set to say what the new data should be
+    //$set just updates only the selected fields;
+    Site.updateOne({'_id': objectId(id)}, {$set: item}, function (err, result) {
+
+      // assert.equal(null, err);
+      console.log('item updated');
+      res.redirect('/site/site');
+
+    });
+  }
+  editObject();
+
+});
+
 
 router.post('/update', function(req, res, next){
 
@@ -66,6 +113,21 @@ router.post('/delete', function(req, res, next){
       // assert.equal(null, err);
       console.log('item deleted');
       res.redirect('/user/portfolio');
+
+    });
+  }
+  deleteObject();
+});
+
+router.post('/delete_site', function(req, res, next){
+  var id = req.body.id;
+
+  var deleteObject = function() {
+    //assert.equal(null, err);
+    Site.deleteOne({'_id': objectId(id)}, function (err, result) {
+      // assert.equal(null, err);
+      console.log('item deleted');
+      res.redirect('/site');
 
     });
   }
@@ -118,6 +180,45 @@ router.post('/delete_user', function(req, res, next){
   }
   deleteObject();
 });
+
+router.post('/insert_site', function(req, res, next) {
+  var currentUserId = req.session.passport.user;
+
+  var siteId = req.body._id;
+  console.log("this is the site id" + siteId);
+
+  var item = {
+    user:currentUserId,
+    site_name: req.body.site_name,
+    site_description: req.body.site_description,
+    site_imagePath: req.body.site_imagePath
+  };
+
+  var sites = new Site(item);
+
+
+  var insertObject = function() {
+    //assert.equal(null, err);
+    sites.save(item, function (err, result) {
+      // assert.equal(null, err);
+      console.log('item inserted');
+      console.log(item);
+      console.log(siteId);
+      // User.update({_id:currentUserId},
+      //     {$addToSet: {"portfolios": portfolioId}},
+      //     {safe: true, upsert: true, new : true},
+      //     function(err, model) {
+      //         console.log(model);
+      //     }
+      // );
+
+      res.redirect('/site');
+    });
+
+  };
+  insertObject();
+});
+
 
 //middleware so that only authenticated users can reach certain routes
 function isLoggedIn(req, res, next) {

@@ -1,0 +1,268 @@
+{{> plain-header}}
+{{> secondary-resource-header}}
+
+<main class="mdl-layout__content">
+    <div class="page-content">
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--2-col"></div>
+            <div class="mdl-cell mdl-cell--8-col">
+                <div class="accordion"><h2 class="large">Update site details</h2></div>
+                <div class="panel">
+                    <form action="/site/profile-details" method="post">
+                        <div class="form-group">
+                            <label for="id">ID</label>
+                            <br>
+                            <input type="text" id="id" name="id" value="{{item.id}}" class="mdl-button block-button">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <br>
+                            <input type="text" id="email" name="email" value="{{item.email}}" class="mdl-button block-button">
+                        </div>
+                        <div class="form-group">
+                            <label for="first_name">First Name</label>
+                            <br>
+                            <input type="text" id="first_name" name="first_name" value="{{item.first_name}}" class="mdl-button block-button">
+                        </div>
+                        <div class="form-group">
+                            <label for="last_name">Last Name</label>
+                            <br>
+                            <input type="text" id="last_name" name="last_name" value="{{item.last_name}}" class="mdl-button block-button">
+                        </div>
+                        <div class="form-group">
+                            <label for="imagePath">Image</label>
+                            <br>
+                            <input type="text" id="imagePath" name="imagePath" value="{{item.imagePath}}" class="mdl-button block-button">
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Profile Description</label>
+                            <br>
+                            <input type="textarea" rows="5" cols="4" id="description" name="description" value="{{item.description}}" class="mdl-button block-button">
+                        </div>
+                        <div class="form-group">
+                            <label for="home_address_line1">Address Line 1</label>
+                            <br>
+                            <input type="text" id="home_address_line1" name="home_address_line1" value="{{item.home_address_line1}}" class="mdl-button block-button">
+                        </div>
+                        <div class="form-group">
+                            <label for="home_address_line2">Address Line 2</label>
+                            <br>
+                            <input type="text" id="home_address_line2" name="home_address_line2" value="{{item.home_address_line2}}" class="mdl-button block-button">
+                        </div>
+                        <div class="form-group">
+                            <label for="postal_code">Postcode</label>
+                            <br>
+                            <input type="text" id="postal_code" name="postal_code" value="{{item.postal_code}}" class="mdl-button block-button">
+                        </div>
+                        <div class="form-group">
+                            <label for="address_state">State</label>
+                            <br>
+                            <input type="text" id="address_state" name="address_state" value="{{item.address_state}}" class="mdl-button block-button">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <br>
+                            <input type="text" id="password" name="password" value="{{item.password}}" class="mdl-button block-button">
+                        </div>
+
+
+                        <button type="submit" class="block2-btn-primary">Update</button>
+                    </form>
+                </div>
+                <br>
+                <div class="accordion"><h2>Update qualifications, visas
+                    <br>and licences</h2></div>
+                <div class="panel">
+                    <form action="/user/profile-qualifications" method="post">
+                        <div class="form-group">
+                            <label for="id">ID</label>
+                            <br>
+                            <input type="text" id="id" name="id" value="{{item.id}}" class="mdl-button block-button">
+                        </div>
+                        <div class="form-group">
+                            <label for="provider_one">Provider</label>
+                            <br>
+                            <select type="text" id="provider_one" name="provider_one" value="{{item.provider_one}}" class="mdl-button block-button">
+                                <option value=""></option>
+                                <option value="MTA Institute">MTA Institute</option>
+                                <option value="TAFE">TAFE</option>
+                                <option value="Queensland Automotive Training (QAT)">Queensland Automotive Training (QAT)</option>
+                                <option value="WesTrac">WesTrac</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="qualification_one">Qualification one</label>
+                            <br>
+                            <select type="text" id="qualification_one" name="qualification_one" value="{{item.qualification_one}}" class="mdl-button block-button">
+                                <option value=""></option>
+                                <option value="AUR30316 – CERTIFICATE III AUTOMOTIVE ELECTRICAL TECHNOLOGY">AUR30316 – CERTIFICATE III AUTOMOTIVE ELECTRICAL TECHNOLOGY</option>
+                                <option value="AUR30416 – CERTIFICATE III AGRICULTURAL MECHANICAL TECHNOLOGY">AUR30416 – CERTIFICATE III AGRICULTURAL MECHANICAL TECHNOLOGY</option>
+                                <option value="AUR30616 – CERTIFICATE III LIGHT VEHICLE MECHANICAL TECHNOLOGY">AUR30616 – CERTIFICATE III LIGHT VEHICLE MECHANICAL TECHNOLOGY</option>
+                                <option value="AUR30716 – CERTIFICATE III IN OUTDOOR POWER EQUIPMENT">AUR30716 – CERTIFICATE III IN OUTDOOR POWER EQUIPMENT</option>
+                                <option value="AUR30816 – CERTIFICATE III MOTORCYCLE MECHANICAL TECHNOLOGY">AUR30816 – CERTIFICATE III MOTORCYCLE MECHANICAL TECHNOLOGY</option>
+                                <option value="AUR31016 – CERTIFICATE III IN AUTOMOTIVE SALES (Parts Interpreting)">AUR31016 – CERTIFICATE III IN AUTOMOTIVE SALES (Parts Interpreting)</option>
+                                <option value="AUR31116 – CERTIFICATE III IN HEAVY COMMERCIAL VEHICLE MECHANICAL TECHNOLOGY">AUR31116 – CERTIFICATE III IN HEAVY COMMERCIAL VEHICLE MECHANICAL TECHNOLOGY</option>
+                                <option value="AUR31216 – CERTIFICATE III IN MOBILE PLANT TECHNOLOGY">AUR31216 – CERTIFICATE III IN MOBILE PLANT TECHNOLOGY</option>
+                                <option value="AUR32116 – CERTIFICATE III IN AUTOMOTIVE BODY REPAIR TECHNOLOGY">AUR32416 – CERTIFICATE III IN AUTOMOTIVE REFINISHING TECHNOLOGY</option>
+                                <option value="AUR32516 – CERTIFICATE III IN AUTOMOTIVE UNDERBODY TECHNOLOGY">AUR32516 – CERTIFICATE III IN AUTOMOTIVE UNDERBODY TECHNOLOGY</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="provider_two">Provider</label>
+                            <br>
+                            <select type="text" id="provider_two" name="provider_two" value="{{item.provider_two}}" class="mdl-button block-button">
+                                <option value=""></option>
+                                <option value="MTA Institute">MTA Institute</option>
+                                <option value="TAFE">TAFE</option>
+                                <option value="Queensland Automotive Training (QAT)">Queensland Automotive Training (QAT)</option>
+                                <option value="WesTrac">WesTrac</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="qualification_two">Qualification two</label>
+                            <br>
+                            <select type="text" id="qualification_two" name="qualification_two" value="{{item.qualification_two}}" class="mdl-button block-button">
+                                <option value=""></option>
+                                <option value="AUR30316 – CERTIFICATE III AUTOMOTIVE ELECTRICAL TECHNOLOGY">AUR30316 – CERTIFICATE III AUTOMOTIVE ELECTRICAL TECHNOLOGY</option>
+                                <option value="AUR30416 – CERTIFICATE III AGRICULTURAL MECHANICAL TECHNOLOGY">AUR30416 – CERTIFICATE III AGRICULTURAL MECHANICAL TECHNOLOGY</option>
+                                <option value="AUR30616 – CERTIFICATE III LIGHT VEHICLE MECHANICAL TECHNOLOGY">AUR30616 – CERTIFICATE III LIGHT VEHICLE MECHANICAL TECHNOLOGY</option>
+                                <option value="AUR30716 – CERTIFICATE III IN OUTDOOR POWER EQUIPMENT">AUR30716 – CERTIFICATE III IN OUTDOOR POWER EQUIPMENT</option>
+                                <option value="AUR30816 – CERTIFICATE III MOTORCYCLE MECHANICAL TECHNOLOGY">AUR30816 – CERTIFICATE III MOTORCYCLE MECHANICAL TECHNOLOGY</option>
+                                <option value="AUR31016 – CERTIFICATE III IN AUTOMOTIVE SALES (Parts Interpreting)">AUR31016 – CERTIFICATE III IN AUTOMOTIVE SALES (Parts Interpreting)</option>
+                                <option value="AUR31116 – CERTIFICATE III IN HEAVY COMMERCIAL VEHICLE MECHANICAL TECHNOLOGY">AUR31116 – CERTIFICATE III IN HEAVY COMMERCIAL VEHICLE MECHANICAL TECHNOLOGY</option>
+                                <option value="AUR31216 – CERTIFICATE III IN MOBILE PLANT TECHNOLOGY">AUR31216 – CERTIFICATE III IN MOBILE PLANT TECHNOLOGY</option>
+                                <option value="AUR32116 – CERTIFICATE III IN AUTOMOTIVE BODY REPAIR TECHNOLOGY">AUR32416 – CERTIFICATE III IN AUTOMOTIVE REFINISHING TECHNOLOGY</option>
+                                <option value="AUR32516 – CERTIFICATE III IN AUTOMOTIVE UNDERBODY TECHNOLOGY">AUR32516 – CERTIFICATE III IN AUTOMOTIVE UNDERBODY TECHNOLOGY</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="provider_three">Provider</label>
+                            <br>
+                            <select type="text" id="provider_three" name="provider_three" value="{{item.provider_three}}" class="mdl-button block-button">
+                                <option value=""></option>
+                                <option value="MTA Institute">MTA Institute</option>
+                                <option value="TAFE">TAFE</option>
+                                <option value="Queensland Automotive Training (QAT)">Queensland Automotive Training (QAT)</option>
+                                <option value="WesTrac">WesTrac</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="qualification_three">Qualification three</label>
+                            <br>
+                            <select type="text" id="qualification_three" name="qualification_three" value="{{item.qualification_three}}" class="mdl-button block-button">
+                                <option value=""></option>
+                                <option value="AUR30316 – CERTIFICATE III AUTOMOTIVE ELECTRICAL TECHNOLOGY">AUR30316 – CERTIFICATE III AUTOMOTIVE ELECTRICAL TECHNOLOGY</option>
+                                <option value="AUR30416 – CERTIFICATE III AGRICULTURAL MECHANICAL TECHNOLOGY">AUR30416 – CERTIFICATE III AGRICULTURAL MECHANICAL TECHNOLOGY</option>
+                                <option value="AUR30616 – CERTIFICATE III LIGHT VEHICLE MECHANICAL TECHNOLOGY">AUR30616 – CERTIFICATE III LIGHT VEHICLE MECHANICAL TECHNOLOGY</option>
+                                <option value="AUR30716 – CERTIFICATE III IN OUTDOOR POWER EQUIPMENT">AUR30716 – CERTIFICATE III IN OUTDOOR POWER EQUIPMENT</option>
+                                <option value="AUR30816 – CERTIFICATE III MOTORCYCLE MECHANICAL TECHNOLOGY">AUR30816 – CERTIFICATE III MOTORCYCLE MECHANICAL TECHNOLOGY</option>
+                                <option value="AUR31016 – CERTIFICATE III IN AUTOMOTIVE SALES (Parts Interpreting)">AUR31016 – CERTIFICATE III IN AUTOMOTIVE SALES (Parts Interpreting)</option>
+                                <option value="AUR31116 – CERTIFICATE III IN HEAVY COMMERCIAL VEHICLE MECHANICAL TECHNOLOGY">AUR31116 – CERTIFICATE III IN HEAVY COMMERCIAL VEHICLE MECHANICAL TECHNOLOGY</option>
+                                <option value="AUR31216 – CERTIFICATE III IN MOBILE PLANT TECHNOLOGY">AUR31216 – CERTIFICATE III IN MOBILE PLANT TECHNOLOGY</option>
+                                <option value="AUR32116 – CERTIFICATE III IN AUTOMOTIVE BODY REPAIR TECHNOLOGY">AUR32416 – CERTIFICATE III IN AUTOMOTIVE REFINISHING TECHNOLOGY</option>
+                                <option value="AUR32516 – CERTIFICATE III IN AUTOMOTIVE UNDERBODY TECHNOLOGY">AUR32516 – CERTIFICATE III IN AUTOMOTIVE UNDERBODY TECHNOLOGY</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="provider_four">Provider</label>
+                            <br>
+                            <select type="text" id="provider_four" name="provider_four" value="{{item.provider_four}}" class="mdl-button block-button">
+                                <option value=""></option>
+                                <option value="MTA Institute">MTA Institute</option>
+                                <option value="TAFE">TAFE</option>
+                                <option value="Queensland Automotive Training (QAT)">Queensland Automotive Training (QAT)</option>
+                                <option value="WesTrac">WesTrac</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="qualification_four">Qualification four</label>
+                            <br>
+                            <select type="text" id="qualification_four" name="qualification_four" value="{{item.qualification_four}}" class="mdl-button block-button">
+                                <option value=""></option>
+                                <option value="AUR30316 – CERTIFICATE III AUTOMOTIVE ELECTRICAL TECHNOLOGY">AUR30316 – CERTIFICATE III AUTOMOTIVE ELECTRICAL TECHNOLOGY</option>
+                                <option value="AUR30416 – CERTIFICATE III AGRICULTURAL MECHANICAL TECHNOLOGY">AUR30416 – CERTIFICATE III AGRICULTURAL MECHANICAL TECHNOLOGY</option>
+                                <option value="AUR30616 – CERTIFICATE III LIGHT VEHICLE MECHANICAL TECHNOLOGY">AUR30616 – CERTIFICATE III LIGHT VEHICLE MECHANICAL TECHNOLOGY</option>
+                                <option value="AUR30716 – CERTIFICATE III IN OUTDOOR POWER EQUIPMENT">AUR30716 – CERTIFICATE III IN OUTDOOR POWER EQUIPMENT</option>
+                                <option value="AUR30816 – CERTIFICATE III MOTORCYCLE MECHANICAL TECHNOLOGY">AUR30816 – CERTIFICATE III MOTORCYCLE MECHANICAL TECHNOLOGY</option>
+                                <option value="AUR31016 – CERTIFICATE III IN AUTOMOTIVE SALES (Parts Interpreting)">AUR31016 – CERTIFICATE III IN AUTOMOTIVE SALES (Parts Interpreting)</option>
+                                <option value="AUR31116 – CERTIFICATE III IN HEAVY COMMERCIAL VEHICLE MECHANICAL TECHNOLOGY">AUR31116 – CERTIFICATE III IN HEAVY COMMERCIAL VEHICLE MECHANICAL TECHNOLOGY</option>
+                                <option value="AUR31216 – CERTIFICATE III IN MOBILE PLANT TECHNOLOGY">AUR31216 – CERTIFICATE III IN MOBILE PLANT TECHNOLOGY</option>
+                                <option value="AUR32116 – CERTIFICATE III IN AUTOMOTIVE BODY REPAIR TECHNOLOGY">AUR32416 – CERTIFICATE III IN AUTOMOTIVE REFINISHING TECHNOLOGY</option>
+                                <option value="AUR32516 – CERTIFICATE III IN AUTOMOTIVE UNDERBODY TECHNOLOGY">AUR32516 – CERTIFICATE III IN AUTOMOTIVE UNDERBODY TECHNOLOGY</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="visa_status">Visa status</label>
+                            <br>
+                            <select type="text" id="visa_status" name="visa_status" value="{{item.visa_status}}" class="mdl-button block-button">
+                                <option value=""></option>
+                                <option value="Australian citizen">AUSTRALIAN CITIZEN</option>
+                                <option value="Australian permanent resident">AUSTRALIAN PERMANENT RESIDENT</option>
+                                <option value="457 Visa">457 VISA</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="licence_one">Licence</label>
+                            <br>
+                            <select type="text" id="licence_one" name="licence_one" value="{{item.licence_one}}" class="mdl-button block-button">
+                                <option value=""></option>
+                                <option value="MOTOR VEHICLE REPAIRER'S LICENCE">MOTOR VEHICLE REPAIRER'S LICENCE</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="licence_one_expiry">Licence Expiry Date</label>
+                            <br>
+                            <input type="text" id="licence_one_expiry" name="licence_one_expiry" value="{{item.licence_one_expiry}}" class="mdl-button block-button">
+                        </div>
+                        <div class="form-group">
+                            <label for="licence_two">Licence</label>
+                            <br>
+                            <select type="text" id="licence_two" name="licence_two" value="{{item.licence_two}}" class="mdl-button block-button">
+                                <option value=""></option>
+                                <option value="Drivers Licence - Class C (Car)">Drivers Licence - Class C (Car)</option>
+                                <option value="Drivers Licence - Class R (Rider)">Drivers Licence - Class R (Rider)</option>
+                                <option value="Drivers Licence - Class LR (Light Rigid)">Drivers Licence - Class LR (Light Rigid)</option>
+                                <option value="Drivers Licence - Class MR (Medium Rigid)">Drivers Licence - Class MR (Medium Rigid)</option>
+                                <option value="Drivers Licence - Class HR (Heavy Rigid)">Drivers Licence - Class HR (Heavy Rigid)</option>
+                                <option value="Drivers Licence - Class HC (Heavy Combination)">Drivers Licence - Class HC (Heavy Combination)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="licence_three">Licence</label>
+                            <br>
+                            <select type="text" id="licence_three" name="licence_three" value="{{item.licence_three}}" class="mdl-button block-button">
+                                <option value=""></option>
+                                <option value="AUR30316 – CERTIFICATE III AUTOMOTIVE ELECTRICAL TECHNOLOGY">AUR30316 – CERTIFICATE III AUTOMOTIVE ELECTRICAL TECHNOLOGY</option>
+                                <option value="AUR30416 – CERTIFICATE III AGRICULTURAL MECHANICAL TECHNOLOGY">AUR30416 – CERTIFICATE III AGRICULTURAL MECHANICAL TECHNOLOGY</option>
+                                <option value="AUR30616 – CERTIFICATE III LIGHT VEHICLE MECHANICAL TECHNOLOGY">AUR30616 – CERTIFICATE III LIGHT VEHICLE MECHANICAL TECHNOLOGY</option>
+                                <option value="AUR30716 – CERTIFICATE III IN OUTDOOR POWER EQUIPMENT">AUR30716 – CERTIFICATE III IN OUTDOOR POWER EQUIPMENT</option>
+                                <option value="AUR30816 – CERTIFICATE III MOTORCYCLE MECHANICAL TECHNOLOGY">AUR30816 – CERTIFICATE III MOTORCYCLE MECHANICAL TECHNOLOGY</option>
+                                <option value="AUR31016 – CERTIFICATE III IN AUTOMOTIVE SALES (Parts Interpreting)">AUR31016 – CERTIFICATE III IN AUTOMOTIVE SALES (Parts Interpreting)</option>
+                                <option value="AUR31116 – CERTIFICATE III IN HEAVY COMMERCIAL VEHICLE MECHANICAL TECHNOLOGY">AUR31116 – CERTIFICATE III IN HEAVY COMMERCIAL VEHICLE MECHANICAL TECHNOLOGY</option>
+                                <option value="AUR31216 – CERTIFICATE III IN MOBILE PLANT TECHNOLOGY">AUR31216 – CERTIFICATE III IN MOBILE PLANT TECHNOLOGY</option>
+                                <option value="AUR32116 – CERTIFICATE III IN AUTOMOTIVE BODY REPAIR TECHNOLOGY">AUR32416 – CERTIFICATE III IN AUTOMOTIVE REFINISHING TECHNOLOGY</option>
+                                <option value="AUR32516 – CERTIFICATE III IN AUTOMOTIVE UNDERBODY TECHNOLOGY">AUR32516 – CERTIFICATE III IN AUTOMOTIVE UNDERBODY TECHNOLOGY</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="block2-btn-primary">Update</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Your content goes here -->
+    </div>
+
+
+</main>
+
+<!-- this final div closes off the div started in the header.hbs -->
+</div>
+
+
+
+
+
+<script type="text/javascript" src="../javascripts/accordion.js"></script>
