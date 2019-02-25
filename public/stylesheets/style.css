@@ -111,6 +111,10 @@ label.group input{
   padding: 20px;
 }
 
+.va_middle {
+  vertical-align: middle;
+}
+
 .no_case {
   text-transform: none;
 }

@@ -21,13 +21,14 @@
                 </p>
             {{#each equipment_item}}
 
-                    <p>{{equipment_name}}</p>
+                    <h3>{{equipment_name}}</h3>
+                    <img src="{{equipment_imagePath}}" alt="" class="portfolio-image-cropper">
+                    <br>
                     <p>{{equipment_description}}</p>
                     <br>
-                    <p>{{site}}</p>
-                    <img src="{{equipment_imagePath}}" alt="" class="portfolio-image-cropper">
-                    <p>{{_id}}</p>
-            <div class="accordion">Edit Equipment</div>
+                    <p>Site id: {{site}} / Equipment id: {{_id}} </p>
+
+            <div class="accordion"><i class="material-icons va_middle">edit</i>Edit</div>
                 <div class="panel">
                     <br>
                     <form action="/edit_equipment" method="post">
@@ -58,7 +59,7 @@
                     </form>
                 </div>
                 <br>
-                <div class="accordion">Delete Equipment</div>
+                <div class="accordion"><i class="material-icons va_middle">delete</i>Delete</div>
                 <div class="panel">
                     <br>
                     <h3>Delete Equipment</h3>
@@ -110,7 +111,7 @@
             <div class="mdl-cell mdl-cell--1-col">
             </div>
             <div class="mdl-cell mdl-cell--5-col">
-                <div class="accordion">Edit Site Data</div>
+                <div class="accordion"><i class="material-icons va_middle">edit</i>Edit Site</div>
                 <div class="panel">
                     <h3>Edit Site Data</h3>
                     <br>
@@ -163,7 +164,7 @@
             <div class="mdl-cell mdl-cell--1-col">
             </div>
             <div class="mdl-cell mdl-cell--5-col">
-                <div class="accordion">Delete Site Data</div>
+                <div class="accordion"><i class="material-icons va_middle">delete</i>Delete Site</div>
                 <div class="panel">
                     <h3>Delete Site Data</h3>
                     <br>
@@ -176,7 +177,6 @@
                         <button type="submit" class="block2-btn-primary">Delete</button>
                     </form>
                 </div>
-
             </div>
             <div class="mdl-cell mdl-cell--6-col">
             </div>
