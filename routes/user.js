@@ -75,6 +75,7 @@ router.post('/profile-details', function(req, res, next){
         email: req.body.email,
         first_name: req.body.first_name,
         last_name: req.body.last_name,
+        membership_number: req.body.membership_number,
         imagePath: req.body.imagePath,
         description: req.body.description,
         home_address_line1: req.body.home_address_line1,
@@ -196,6 +197,11 @@ router.get('/signup', function(req, res, next){
     res.render('user/signup', {messages: messages, hasErrors: messages.length>0});
 });
 
+router.get('/vendor_signup', function(req, res, next){
+    var messages = req.flash('error');
+    res.render('user/vendor_signup', {messages: messages, hasErrors: messages.length>0});
+});
+
 router.get('/forgot', function(req, res) {
     res.render('user/forgot', {
         user: req.user
@@ -204,6 +210,21 @@ router.get('/forgot', function(req, res) {
 
 router.post('/signup', passport.authenticate('local.signup', {
     failureRedirect: '/user/signup',
+    failureFlash: true
+}), function(req, res, next){ //if success then continue to this third function
+    if(req.session.oldUrl){
+        var oldUrl = req.session.oldUrl;
+        req.session.oldUrl = null;
+        res.redirect(oldUrl);
+
+    } else {
+        res.redirect('/user/about'); //deals with case of user not coming from checkout - so just signs in and
+        // and gets directed to user profile page
+    }
+});
+
+router.post('/vendor_signup', passport.authenticate('local.vendor_signup', {
+    failureRedirect: '/user/vendor_signup',
     failureFlash: true
 }), function(req, res, next){ //if success then continue to this third function
     if(req.session.oldUrl){

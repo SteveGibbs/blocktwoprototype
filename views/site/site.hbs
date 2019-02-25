@@ -45,7 +45,7 @@
                         <div class="form-group">
                             <label for="equipment_imagePath">Image</label>
                             <br>
-                            <input type="text" id="equipment_imagePath" name="equipment_imagePath" value="{{equipment_description}}" class="mdl-button block-button">
+                            <input type="text" id="equipment_imagePath" name="equipment_imagePath" value="{{equipment_imagePath}}" class="mdl-button block-button">
                         </div>
                         <div class="form-group">
                             <label for="site">Site Id</label>
@@ -94,8 +94,15 @@
                     <div class="form-group">
                         <label for="equipment_imagePath">Image</label>
                         <br>
-                        <input type="text" id="equipment_imagePath" name="equipment_imagePath" value="{{item.equipment_description}}" class="mdl-button block-button">
+                        <input type="text" id="equipment_imagePath" name="equipment_imagePath" value="{{item.equipment_imagePath}}" class="mdl-button block-button">
                     </div>
+                    <div class="form-group">
+                        <label for="equipment_cost">Cost</label>
+                        <br>
+                        <input class="mdl-slider mdl-js-slider" type="range"
+                               min="0" max="100" value="25" step="2" tabindex="0" id="demo">
+                    </div>
+
                     <div class="form-group">
                         <label for="site">Site Id</label>
                         <input type="text" class="form-control" id="site" name="site" value="{{item.id}}">

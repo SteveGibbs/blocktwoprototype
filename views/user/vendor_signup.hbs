@@ -1,0 +1,68 @@
+{{> plain-header}}
+
+<main class="mdl-layout__content">
+    <div class="page-content">
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--6-col">
+                <img src="../images/resources/automotive-car-car-engine-1409999.jpg" alt="" class="image-crop-half">
+            </div>
+            <div class="mdl-cell mdl-cell--6-col">
+                <div class="ml100">
+
+                    <h3>Sign up with an industry association</h3>
+                    {{#if hasErrors}}
+                        <div class="alert alert-danger">
+                            {{# each messages}}
+                                <p>{{this}}</p>
+                            {{/each}}
+                        </div>
+                    {{/if}}
+                    <form action="/user/vendor_signup" method="post">
+                        <!-- <p>Name</p>
+                        <div class="mdl-button block-button">
+                            <label class="group"><i class="material-icons">person</i><input type="text" placeholder="Full name"/></label>
+                        </div> -->
+                        <div class="form-group">
+                            <label for="username">NAME</label>
+                            <br>
+                            <input type="text" id="username" name="username" placeholder="Full name" class="mdl-button block-button no_case">
+                        </div>
+                        <div class="form-group">
+                            <label for="membership_number">MEMBERSHIP NUMBER</label>
+                            <br>
+                            <input type="text" id="membership_number" name="membership_number" placeholder="&#xE7FD; Insert number" class="mdl-button block-button">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">EMAIL</label>
+                            <br>
+                            <input type="text" id="email" name="email" placeholder="&#xE7FD; Email" class="mdl-button block-button no_case">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">PASSWORD</label>
+                            <br>
+                            <input type="password" id="password" name="password" placeholder="Password" class="mdl-button block-button no_case">
+                        </div>
+                        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+                        <br>
+                        <br>
+                        <br>
+                        <button type="submit" class="block2-btn-primary">Join now for free</button>
+                    </form>
+                    <br>
+                    <br>
+                    <p>Already have an account? <a href="/user/signin">Sign in</a></p>
+                    <div class="hidden">
+                        This is the csrfToken - {{csrfToken}}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Your content goes here -->
+    </div>
+</main>
+
+<!-- this final div closes off the div started in the header.hbs -->
+</div>
+

@@ -8,6 +8,7 @@ var userSchema = new Schema({
     password: { type: String, required: true },
     first_name: {type: String},
     last_name: {type: String},
+    membership_number: {type: String},
     imagePath: {type: String},
     description: {type: String},
     home_address_line1: {type: String},

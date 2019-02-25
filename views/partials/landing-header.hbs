@@ -8,13 +8,15 @@
             <div class="mdl-layout-spacer"></div>
             <!-- Navigation. We hide it in small screens. -->
             <nav class="mdl-navigation mdl-layout--large-screen-only">
+                <a class="mdl-navigation__link" href="/about">What is Block2?</a>
                 <a class="mdl-navigation__link" href="/plan">Plans</a>
                 {{# if login}}
                     <a class="mdl-navigation__link" href="/user/about">Welcome {{item.first_name}}</a>
                     <a class="mdl-navigation__link" href="/user/logout">Logout</a>
                 {{else}}
-                    <a class="mdl-navigation__link" href="/user/signin">Sign in</a>
+                    <a class="mdl-navigation__link" href="/user/vendor_signup">Vendor sign up</a>
                     <a class="mdl-navigation__link" href="/user/signup">Sign up</a>
+                    <a class="mdl-navigation__link" href="/user/signin">Log in</a>
                 {{/if}}
 
             </nav>

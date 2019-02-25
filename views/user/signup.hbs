@@ -9,7 +9,7 @@
             <div class="mdl-cell mdl-cell--6-col">
                 <div class="ml100">
 
-                <h3>Sign up with an industry association</h3>
+                <h3>Sign up</h3>
                 {{#if hasErrors}}
                     <div class="alert alert-danger">
                         {{# each messages}}
@@ -25,22 +25,17 @@
                     <div class="form-group">
                         <label for="username">NAME</label>
                         <br>
-                        <input type="text" id="username" name="username" placeholder="Full name" class="mdl-button block-button">
-                    </div>
-                    <div class="form-group">
-                        <label for="membership_number">MEMBERSHIP NUMBER</label>
-                        <br>
-                        <input type="text" id="membership_number" name="membership_number" placeholder="&#xE7FD; Insert number" class="mdl-button block-button">
+                        <input type="text" id="username" name="username" placeholder="Full name" class="mdl-button block-button no_case">
                     </div>
                     <div class="form-group">
                         <label for="email">EMAIL</label>
                         <br>
-                        <input type="text" id="email" name="email" placeholder="&#xE7FD; Email" class="mdl-button block-button">
+                        <input type="text" id="email" name="email" placeholder="&#xE7FD; Email" class="mdl-button block-button no_case">
                     </div>
                     <div class="form-group">
                         <label for="password">PASSWORD</label>
                         <br>
-                        <input type="password" id="password" name="password" placeholder="Password" class="mdl-button block-button">
+                        <input type="password" id="password" name="password" placeholder="Password" class="mdl-button block-button no_case">
                     </div>
                         <input type="hidden" name="_csrf" value="{{csrfToken}}">
                         <br>
