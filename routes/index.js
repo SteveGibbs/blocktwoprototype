@@ -37,27 +37,32 @@ router.get('/site/:id', function(req, res, next){
   var result = {};
   //assert.equal(null, err);
   var getObject = function() {
-    Site.findOne({'_id': objectId(uniqueid)}, function (err, doc) {
+
+    // User.findById(req.user.id, function (err, user){
+    //   var projects = {};
+    //   Portfolio.find({user: req.user}, function (err, docs) {
+    //     projects = docs;
+
+   Site.findById({'_id': objectId(uniqueid)}, function (err, doc) {
+  //    Site.findById(req.site.id, function (err, doc){
       //assert.equal(null, err);
       console.log('item found');
-      console.log("this is the unique id" + uniqueid);
+      console.log("this is the unique id of the site" + uniqueid);
       console.log(doc);
       console.log(doc.title);
       result = doc;
 
       var equipments = {};
-        Equipment.find({uniqueid: doc.site}, function(err, docs) {
+        Equipment.find({site: objectId(uniqueid)}, function(err, doc) {
           console.log("THIS IS THE REQ.SITE" + req.equipment_name);
           console.log("this is the equipments unique id" + uniqueid);
-          equipments = docs;
+          equipments = doc;
           console.log("yes this is" + equipments);
 //             res.render('site/about', {sites: productChunks, successMsg: successMsg, noMessages: !successMsg, equipment_item: equipments});
 //         })
 
           res.render('site/site', {item: result, equipment_item: equipments});
         })
-
-    //  res.render('site/site', {item: result});
     });
   };
   getObject();
@@ -255,17 +260,11 @@ router.post('/insert_site', function(req, res, next) {
 });
 
 router.post('/insert_equipment', function(req, res, next) {
-  //var currentSiteId = req.session.passport.user;
-
-  //console.log("this is the req" + req);
-  //console.log("this is the req.body" + req.body);
-  //console.log("this is the site id" + siteId);
 
   var equipmentId = req.body._id;
   console.log("this is the equipment id" + equipmentId);
 
   var item = {
-    //site:currentSiteId,
     site: req.body.site,
     equipment_name: req.body.equipment_name,
     equipment_description: req.body.equipment_description,
@@ -282,19 +281,41 @@ router.post('/insert_equipment', function(req, res, next) {
       console.log('item inserted');
       console.log(item);
       console.log(equipmentId);
-      // User.update({_id:currentUserId},
-      //     {$addToSet: {"portfolios": portfolioId}},
-      //     {safe: true, upsert: true, new : true},
-      //     function(err, model) {
-      //         console.log(model);
-      //     }
-      // );
 
       res.redirect('/site');
     });
 
   };
   insertObject();
+});
+
+router.post('/edit_equipment', function(req, res, next){
+
+  var item = {
+    //site:currentSiteId,
+    site: req.body.site,
+    equipment_name: req.body.equipment_name,
+    equipment_description: req.body.equipment_description,
+    equipment_imagePath: req.body.equipment_imagePath
+  };
+
+  var id = req.body.id;
+
+  var editObject = function() {
+    //assert.equal(null, err);
+    //pass the id into the objectId function to transform it into an objectId that Mongo recognises as the
+    // first parameter then use $set to say what the new data should be
+    //$set just updates only the selected fields;
+    Equipment.updateOne({'_id': objectId(id)}, {$set: item}, function (err, result) {
+
+      // assert.equal(null, err);
+      console.log('item updated');
+      res.redirect('/site');
+
+    });
+  }
+  editObject();
+
 });
 
 router.post('/delete_equipment', function(req, res, next){
