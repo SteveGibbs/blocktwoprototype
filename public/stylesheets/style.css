@@ -111,6 +111,10 @@ label.group input{
   padding: 20px;
 }
 
+.no_case {
+  text-transform: none;
+}
+
 .w150 {
   width: 150px;
 }

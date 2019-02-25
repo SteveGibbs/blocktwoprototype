@@ -4,6 +4,7 @@ var objectId = require('mongodb').ObjectID;  // mongo ID is an object ID not a s
 var User = require('../models/user');
 var Portfolio = require('../models/portfolio');
 var Site = require('../models/site');
+var Equipment = require('../models/equipment');
 
 //var url = process.env.MONGODB_URI;
 var url = 'localhost:27017/blocktwo';
@@ -39,11 +40,41 @@ router.get('/site/:id', function(req, res, next){
     Site.findOne({'_id': objectId(uniqueid)}, function (err, doc) {
       //assert.equal(null, err);
       console.log('item found');
-      console.log(uniqueid);
+      console.log("this is the unique id" + uniqueid);
       console.log(doc);
       console.log(doc.title);
       result = doc;
-      res.render('site/site', {item: result});
+
+      var equipments = {};
+        Equipment.find({uniqueid: doc.site}, function(err, docs) {
+          console.log("THIS IS THE REQ.SITE" + req.equipment_name);
+          console.log("this is the equipments unique id" + uniqueid);
+          equipments = docs;
+          console.log("yes this is" + equipments);
+//             res.render('site/about', {sites: productChunks, successMsg: successMsg, noMessages: !successMsg, equipment_item: equipments});
+//         })
+
+          res.render('site/site', {item: result, equipment_item: equipments});
+        })
+
+    //  res.render('site/site', {item: result});
+    });
+  };
+  getObject();
+});
+
+router.get('/site/:id/equipment', function(req, res, next){
+  var uniqueid = req.params.id;
+  var result = {};
+  //assert.equal(null, err);
+  var getObject = function() {
+    Equipment.find(function (err, doc) {
+      //assert.equal(null, err);
+      console.log("this is the" + uniqueid);
+      console.log(doc);
+      // console.log(doc.title);
+      result = doc;
+      res.render('site/equipment', {item: result});
     });
   };
   getObject();
@@ -221,6 +252,65 @@ router.post('/insert_site', function(req, res, next) {
 
   };
   insertObject();
+});
+
+router.post('/insert_equipment', function(req, res, next) {
+  //var currentSiteId = req.session.passport.user;
+
+  //console.log("this is the req" + req);
+  //console.log("this is the req.body" + req.body);
+  //console.log("this is the site id" + siteId);
+
+  var equipmentId = req.body._id;
+  console.log("this is the equipment id" + equipmentId);
+
+  var item = {
+    //site:currentSiteId,
+    site: req.body.site,
+    equipment_name: req.body.equipment_name,
+    equipment_description: req.body.equipment_description,
+    equipment_imagePath: req.body.equipment_imagePath
+  };
+
+  var equipments = new Equipment(item);
+
+
+  var insertObject = function() {
+    //assert.equal(null, err);
+    equipments.save(item, function (err, result) {
+      // assert.equal(null, err);
+      console.log('item inserted');
+      console.log(item);
+      console.log(equipmentId);
+      // User.update({_id:currentUserId},
+      //     {$addToSet: {"portfolios": portfolioId}},
+      //     {safe: true, upsert: true, new : true},
+      //     function(err, model) {
+      //         console.log(model);
+      //     }
+      // );
+
+      res.redirect('/site');
+    });
+
+  };
+  insertObject();
+});
+
+router.post('/delete_equipment', function(req, res, next){
+  var id = req.body.id;
+  console.log("this is the id" + id);
+
+  var deleteObject = function() {
+    //assert.equal(null, err);
+    Equipment.deleteOne({'_id': objectId(id)}, function (err, user) {
+      // assert.equal(null, err);
+      console.log('item deleted');
+      res.redirect('/site');
+
+    });
+  }
+  deleteObject();
 });
 
 

@@ -19,8 +19,85 @@
                 {{item.site_description}}
 
                 </p>
+            {{#each equipment_item}}
+
+                    <p>{{equipment_name}}</p>
+                    <p>{{equipment_description}}</p>
+                    <br>
+                    <p>{{site}}</p>
+                    <img src="{{equipment_imagePath}}" alt="" class="portfolio-image-cropper">
+                    <p>{{_id}}</p>
+            <div class="accordion">Edit Equipment</div>
+                <div class="panel">
+                    <br>
+                    <form action="/edit_equipment" method="post">
+                        <div class="form-group">
+                            <label for="equipment_name">Equipment</label>
+                            <br>
+                            <input type="text" id="equipment_name" name="equipment_name" value="{{equipment_name}}" class="mdl-button block-button">
+                        </div>
+                        <div class="form-group">
+                            <label for="equipment_description">Description</label>
+                            <br>
+                            <input type="textarea" id="equipment_description" name="equipment_description" value="{{equipment_description}}" rows="6" class="mdl-button block-area">
+                        </div>
+                        <div class="form-group">
+                            <label for="equipment_imagePath">Image</label>
+                            <br>
+                            <input type="text" id="equipment_imagePath" name="equipment_imagePath" value="{{equipment_description}}" class="mdl-button block-button">
+                        </div>
+                        <div class="form-group">
+                            <label for="site">Site Id</label>
+                            <input type="text" class="form-control" id="site" name="site" value="{{site}}">
+                        </div>
+                        <button type="submit" class="block2-btn-primary">Edit equipment</button>
+                    </form>
+                </div>
+                <br>
+                <div class="accordion">Delete Equipment</div>
+                <div class="panel">
+                    <br>
+                    <h3>Delete Equipment</h3>
+                    <br>
+                    <form action="/delete_equipment" method="post">
+                        <div class="form-group">
+                            <label for="id">ID</label>
+                            <input type="text" class = "form-control" id="id" name="id" value="{{_id}}">
+                        </div>
+                        <br>
+                        <button type="submit" class="block2-btn-primary">Delete</button>
+                    </form>
+                </div>
+
+            {{/each}}
+
             </div>
-            <div class="mdl-cell mdl-cell--6-col">
+            <div class="mdl-cell mdl-cell--1-col">
+            </div>
+            <div class="mdl-cell mdl-cell--5-col">
+                <form action="/insert_equipment" method="post">
+                    <div class="form-group">
+                        <label for="equipment_name">Equipment</label>
+                        <br>
+                        <input type="text" id="equipment_name" name="equipment_name" value="{{item.equipment_name}}" class="mdl-button block-button">
+                    </div>
+                    <div class="form-group">
+                        <label for="equipment_description">Description</label>
+                        <br>
+                        <input type="textarea" id="equipment_description" name="equipment_description" value="{{item.equipment_description}}" rows="6" class="mdl-button block-area">
+                    </div>
+                    <div class="form-group">
+                        <label for="equipment_imagePath">Image</label>
+                        <br>
+                        <input type="text" id="equipment_imagePath" name="equipment_imagePath" value="{{item.equipment_description}}" class="mdl-button block-button">
+                    </div>
+                    <div class="form-group">
+                        <label for="site">Site Id</label>
+                        <input type="text" class="form-control" id="site" name="site" value="{{item.id}}">
+                    </div>
+                    <button type="submit" class="block2-btn-primary">Add equipment</button>
+                </form>
+
 
             </div>
         </div>
@@ -29,44 +106,51 @@
             <div class="mdl-cell mdl-cell--1-col">
             </div>
             <div class="mdl-cell mdl-cell--5-col">
-                <h3>Edit Data</h3>
-                <br>
-                <form action="/update_site" method="post">
-                    <div class="form-group">
-                        <label for="id">ID</label>
-                        <input type="text" class = "form-control" id="id" name="id" value="{{item.id}}">
-                    </div>
-                    <div class="form-group">
-                        <label for="site_name">Site Name</label>
-                        <input type="text" class="form-control" id="site_name" name="site_name" value="{{item.site_name}}">
-                    </div>
-                    <div class="form-group">
-                        <label for="site_description">Description</label>
-                        <input type="textarea" class="form-control" rows="6" id="site_description" name="site_description" value="{{item.site_description}}">
-                    </div>
-                    <div class="form-group">
-                        <label for="site_imagePath">Image</label>
-                        <input type="text" class="form-control" id="site_imagePath" name="site_imagePath" value="{{item.site_imagePath}}">
-                    </div>
-                    <div class="form-group">
-                        <label for="site_address_line1">Address Line 1</label>
-                        <input type="text" class="form-control" id="site_address_line1" name="site_address_line1" value="{{item.site_address_line1}}">
-                    </div>
-                    <div class="form-group">
-                        <label for="site_address_line2">Address Line 2</label>
-                        <input type="text" class="form-control" id="site_address_line2" name="site_address_line2" value="{{item.site_address_line2}}">
-                    </div>
-                    <div class="form-group">
-                        <label for="site_postal_code">Postcode</label>
-                        <input type="text" class="form-control" id="site_postal_code" name="site_postal_code" value="{{item.site_postal_code}}">
-                    </div>
-                    <div class="form-group">
-                        <label for="site_address_state">State</label>
-                        <input type="text" class="form-control" id="site_address_state" name="site_address_state" value="{{item.site_address_state}}">
-                    </div>
-                    <button type="submit" class="block2-btn-primary">Update</button>
+                <div class="accordion">Edit Site Data</div>
+                <div class="panel">
+                    <h3>Edit Site Data</h3>
                     <br>
-                </form>
+                    <form action="/update_site" method="post">
+                        <div class="form-group">
+                            <label for="id">ID</label>
+                            <input type="text" class = "form-control" id="id" name="id" value="{{item.id}}">
+                        </div>
+                        <div class="form-group">
+                            <label for="site_name">Site Name</label>
+                            <input type="text" class="form-control" id="site_name" name="site_name" value="{{item.site_name}}">
+                        </div>
+                        <div class="form-group">
+                            <label for="site_description">Description</label>
+                            <input type="textarea" class="form-control" rows="6" id="site_description" name="site_description" value="{{item.site_description}}">
+                        </div>
+                        <div class="form-group">
+                            <label for="site_imagePath">Image</label>
+                            <input type="text" class="form-control" id="site_imagePath" name="site_imagePath" value="{{item.site_imagePath}}">
+                        </div>
+                        <div class="form-group">
+                            <label for="site_address_line1">Address Line 1</label>
+                            <input type="text" class="form-control" id="site_address_line1" name="site_address_line1" value="{{item.site_address_line1}}">
+                        </div>
+                        <div class="form-group">
+                            <label for="site_address_line2">Address Line 2</label>
+                            <input type="text" class="form-control" id="site_address_line2" name="site_address_line2" value="{{item.site_address_line2}}">
+                        </div>
+                        <div class="form-group">
+                            <label for="site_postal_code">Postcode</label>
+                            <input type="text" class="form-control" id="site_postal_code" name="site_postal_code" value="{{item.site_postal_code}}">
+                        </div>
+                        <div class="form-group">
+                            <label for="site_address_state">State</label>
+                            <input type="text" class="form-control" id="site_address_state" name="site_address_state" value="{{item.site_address_state}}">
+                        </div>
+
+                        <button type="submit" class="block2-btn-primary">Update</button>
+                        <br>
+                    </form>
+
+                </div>
+
+
             </div>
             <div class="mdl-cell mdl-cell--6-col">
             </div>
@@ -75,16 +159,20 @@
             <div class="mdl-cell mdl-cell--1-col">
             </div>
             <div class="mdl-cell mdl-cell--5-col">
-                <h3>Delete Project</h3>
-                <br>
-                <form action="/delete_site" method="post">
-                    <div class="form-group">
-                        <label for="id">ID</label>
-                        <input type="text" class = "form-control" id="id" name="id" value="{{item.id}}">
-                    </div>
+                <div class="accordion">Delete Site Data</div>
+                <div class="panel">
+                    <h3>Delete Site Data</h3>
                     <br>
-                    <button type="submit" class="block2-btn-primary">Delete</button>
-                </form>
+                    <form action="/delete_site" method="post">
+                        <div class="form-group">
+                            <label for="id">ID</label>
+                            <input type="text" class = "form-control" id="id" name="id" value="{{item.id}}">
+                        </div>
+                        <br>
+                        <button type="submit" class="block2-btn-primary">Delete</button>
+                    </form>
+                </div>
+
             </div>
             <div class="mdl-cell mdl-cell--6-col">
             </div>
@@ -95,3 +183,5 @@
 
 <!-- this final div closes off the div started in the header.hbs -->
 </div>
+
+<script type="text/javascript" src="../javascripts/accordion.js"></script>
