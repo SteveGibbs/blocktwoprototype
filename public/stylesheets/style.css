@@ -43,6 +43,11 @@ h5 {
   line-height: 18px;
 }
 
+p {
+  font-size: 14px;
+  line-height: 18px;
+}
+
 label.group{
   line-height:40px;
   display:inline-block;

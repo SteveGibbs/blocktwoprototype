@@ -1,11 +1,43 @@
-{{> header}}
+{{> plain-header}}
 
-    <main class="mdl-layout__content">
-        <div class="page-content">
-            <h1>This is the page for quoting</h1>
-            <!-- Your content goes here -->
+<main class="mdl-layout__content">
+    <div class="page-content">
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--6-col">
+                <div class="about-rectangle">
+                    <div class="p15">
+                        <h1>Vehicle servicing just got a whole lot easier.</h1>
+                        <h2>Get Quote</h2>
+                        <br>
+                        <form action="/quote_no_login" method="post">
+                            <div class="form-group">
+                                <label for="car_registration">CAR REGO</label>
+                                <br>
+                                <input type="text" id="car_registration" name="car_registration" placeholder="&#xE7FD; Registration number" class="mdl-button block-button no_case">
+                            </div>
+                            <div class="form-group">
+                                <label for="customer_location">YOUR LOCATION</label>
+                                <br>
+                                <input type="text" id="customer_location" name="customer_location" placeholder="&#xE7FD; Your location" class="mdl-button block-button no_case">
+                            </div>
+
+                            <button type="submit" class="block2-btn-primary">SEARCH</button>
+                            <br>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="mdl-cell mdl-cell--6-col"></div>
         </div>
-    </main>
+        
+
+    <!-- Your content goes here -->
+    </div>
+</main>
 
 <!-- this final div closes off the div started in the header.hbs -->
 </div>
+
+
