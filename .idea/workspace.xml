@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="600e58db-8efd-4723-bbd4-3fd73afb5058" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/views/site/request.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/resources/jean-philippe-delberghe-777933-unsplash.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/resources/jean-philippe-delberghe-777933-unsplash.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layouts/layout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/layouts/layout.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/quote.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/quote.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/site/about.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/site/about.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/user/about.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/user/about.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/user/portfolio.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/user/portfolio.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/user/profile.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/user/profile.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/secondary-site-header.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/secondary-site-header.hbs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,96 +18,87 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/user/profile.hbs">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="107">
+              <caret line="225" column="25" selection-start-line="225" selection-start-column="25" selection-end-line="237" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="214">
+              <caret line="207" column="18" selection-start-line="207" selection-start-column="18" selection-end-line="207" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/quote.hbs">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="410">
-              <caret line="88" column="127" selection-start-line="88" selection-start-column="127" selection-end-line="88" selection-end-column="127" />
-              <caret line="93" column="158" selection-start-line="93" selection-start-column="158" selection-end-line="93" selection-end-column="158" />
-              <caret line="104" column="173" selection-start-line="104" selection-start-column="173" selection-end-line="104" selection-end-column="173" />
-              <caret line="121" column="158" selection-start-line="121" selection-start-column="158" selection-end-line="121" selection-end-column="158" />
-              <caret line="132" column="173" selection-start-line="132" selection-start-column="173" selection-end-line="132" selection-end-column="173" />
-              <caret line="149" column="164" selection-start-line="149" selection-start-column="164" selection-end-line="149" selection-end-column="164" />
-              <caret line="160" column="179" selection-start-line="160" selection-start-column="179" selection-end-line="160" selection-end-column="179" />
-              <caret line="177" column="161" selection-start-line="177" selection-start-column="161" selection-end-line="177" selection-end-column="161" />
-              <caret line="188" column="176" selection-start-line="188" selection-start-column="176" selection-end-line="188" selection-end-column="176" />
-              <caret line="205" column="155" selection-start-line="205" selection-start-column="155" selection-end-line="205" selection-end-column="155" />
-              <caret line="215" column="155" selection-start-line="215" selection-start-column="155" selection-end-line="215" selection-end-column="155" />
-              <caret line="223" column="175" selection-start-line="223" selection-start-column="175" selection-end-line="223" selection-end-column="175" />
-              <caret line="228" column="155" selection-start-line="228" selection-start-column="155" selection-end-line="228" selection-end-column="155" />
-              <caret line="241" column="161" selection-start-line="241" selection-start-column="161" selection-end-line="241" selection-end-column="161" />
+              <caret line="70" lean-forward="true" selection-end-line="70" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/user/about.hbs">
+        <entry file="file://$PROJECT_DIR$/routes/site.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="66" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="66" />
+            <state relative-caret-position="223">
+              <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/site/about.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/user/projects.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="38" column="30" lean-forward="true" selection-start-line="32" selection-start-column="16" selection-end-line="53" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/user/portfolio.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="34" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/layouts/layout.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="63" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/views/site/equipment.hbs">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
+        <entry file="file://$PROJECT_DIR$/views/site/request.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="214" column="18" selection-start-line="214" selection-start-column="18" selection-end-line="214" selection-end-column="18" />
+            <state relative-caret-position="134">
+              <caret line="97" column="49" selection-start-line="97" selection-start-column="49" selection-end-line="97" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/accordion.js">
+        <entry file="file://$PROJECT_DIR$/views/site/site.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+            <state relative-caret-position="109">
+              <caret line="159" column="28" lean-forward="true" selection-start-line="159" selection-start-column="28" selection-end-line="159" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/profile.js">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/views/partials/secondary-site-header.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="51" lean-forward="true" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/site/profile.hbs">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/routes/user.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="215" column="16" selection-start-line="215" selection-start-column="16" selection-end-line="215" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -126,10 +112,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>user/portfo</find>
-      <find>user/insert</find>
-      <find>user/port</find>
-      <find>data/</find>
       <find>/data/{{id}}</find>
       <find>/updat</find>
       <find>/dele</find>
@@ -156,6 +138,10 @@
       <find>back</find>
       <find>Gotham</find>
       <find>hover</find>
+      <find>site/about</find>
+      <find>equipment</find>
+      <find>accordi</find>
+      <find>slider</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/views</dir>
@@ -188,10 +174,7 @@
         <option value="$PROJECT_DIR$/views/admin/users.hbs" />
         <option value="$PROJECT_DIR$/models/site.js" />
         <option value="$PROJECT_DIR$/models/equipment.js" />
-        <option value="$PROJECT_DIR$/routes/site.js" />
         <option value="$PROJECT_DIR$/views/user/signin.hbs" />
-        <option value="$PROJECT_DIR$/views/partials/secondary-site-header.hbs" />
-        <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/views/site/profile.hbs" />
         <option value="$PROJECT_DIR$/views/site/equipment.hbs" />
         <option value="$PROJECT_DIR$/views/site/site.hbs" />
@@ -215,6 +198,10 @@
         <option value="$PROJECT_DIR$/views/user/portfolio.hbs" />
         <option value="$PROJECT_DIR$/views/site/about.hbs" />
         <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
+        <option value="$PROJECT_DIR$/routes/site.js" />
+        <option value="$PROJECT_DIR$/views/partials/secondary-site-header.hbs" />
+        <option value="$PROJECT_DIR$/routes/index.js" />
+        <option value="$PROJECT_DIR$/views/site/request.hbs" />
       </list>
     </option>
   </component>
@@ -257,13 +244,6 @@
               <item name="blocktest" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blocktest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blocktest" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blocktest" type="b2602c69:ProjectViewProjectNode" />
@@ -376,18 +356,18 @@
       <workItem from="1550203937611" duration="873000" />
       <workItem from="1550204917021" duration="8709000" />
       <workItem from="1550370057702" duration="29701000" />
-      <workItem from="1550622503019" duration="73160000" />
+      <workItem from="1550622503019" duration="77873000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="264003000" />
+    <option name="totallyTimeSpent" value="268716000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="45" y="26" width="1545" height="829" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19893546" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19893546" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -402,14 +382,14 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.33514246" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.5495251" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26436782" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19893546" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -424,7 +404,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2926491" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.33514246" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -447,25 +427,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/site/infrastructure.hbs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/resources/oli-woodman-1194990-unsplash.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/resources/neonbrand-716635-unsplash.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/resources/neonbrand-358354-unsplash.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/site/site.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="90" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/partials/landing-header.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -498,13 +459,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="491">
           <caret line="76" column="33" lean-forward="true" selection-start-line="76" selection-start-column="33" selection-end-line="76" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="231" column="34" lean-forward="true" selection-start-line="231" selection-start-column="34" selection-end-line="231" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -594,20 +548,10 @@
     <entry file="file://$PROJECT_DIR$/routes/quote.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/quote.hbs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/partials/plain-header.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="44" lean-forward="true" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -667,26 +611,6 @@
     <entry file="file://$PROJECT_DIR$/views/site/profile.hbs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/user/profile.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="88" column="127" selection-start-line="88" selection-start-column="127" selection-end-line="88" selection-end-column="127" />
-          <caret line="93" column="158" selection-start-line="93" selection-start-column="158" selection-end-line="93" selection-end-column="158" />
-          <caret line="104" column="173" selection-start-line="104" selection-start-column="173" selection-end-line="104" selection-end-column="173" />
-          <caret line="121" column="158" selection-start-line="121" selection-start-column="158" selection-end-line="121" selection-end-column="158" />
-          <caret line="132" column="173" selection-start-line="132" selection-start-column="173" selection-end-line="132" selection-end-column="173" />
-          <caret line="149" column="164" selection-start-line="149" selection-start-column="164" selection-end-line="149" selection-end-column="164" />
-          <caret line="160" column="179" selection-start-line="160" selection-start-column="179" selection-end-line="160" selection-end-column="179" />
-          <caret line="177" column="161" selection-start-line="177" selection-start-column="161" selection-end-line="177" selection-end-column="161" />
-          <caret line="188" column="176" selection-start-line="188" selection-start-column="176" selection-end-line="188" selection-end-column="176" />
-          <caret line="205" column="155" selection-start-line="205" selection-start-column="155" selection-end-line="205" selection-end-column="155" />
-          <caret line="215" column="155" selection-start-line="215" selection-start-column="155" selection-end-line="215" selection-end-column="155" />
-          <caret line="223" column="175" selection-start-line="223" selection-start-column="175" selection-end-line="223" selection-end-column="175" />
-          <caret line="228" column="155" selection-start-line="228" selection-start-column="155" selection-end-line="228" selection-end-column="155" />
-          <caret line="241" column="161" selection-start-line="241" selection-start-column="161" selection-end-line="241" selection-end-column="161" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/user/about.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -710,8 +634,67 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="214" column="18" selection-start-line="214" selection-start-column="18" selection-end-line="214" selection-end-column="18" />
+        <state relative-caret-position="214">
+          <caret line="207" column="18" selection-start-line="207" selection-start-column="18" selection-end-line="207" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="215" column="16" selection-start-line="215" selection-start-column="16" selection-end-line="215" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/site.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/quote.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="70" lean-forward="true" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/partials/secondary-site-header.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="51" lean-forward="true" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/user/profile.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="225" column="25" selection-start-line="225" selection-start-column="25" selection-end-line="237" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/site/equipment.hbs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/site/site.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="159" column="28" lean-forward="true" selection-start-line="159" selection-start-column="28" selection-end-line="159" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/site/request.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="97" column="49" selection-start-line="97" selection-start-column="49" selection-end-line="97" selection-end-column="49" />
         </state>
       </provider>
     </entry>

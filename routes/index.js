@@ -85,6 +85,13 @@ router.get('/site/:id/equipment', function(req, res, next){
   getObject();
 });
 
+router.get('/site/:id/request', function(req, res, next){
+
+      res.render('site/request');
+
+});
+
+
 router.post('/update_site', function(req, res, next){
 
   var item = {

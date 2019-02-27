@@ -1,0 +1,122 @@
+{{> plain-header}}
+
+<main class="mdl-layout__content background-image">
+    <div class="page-content">
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--6-col">
+                <div class="about-rectangle">
+                    <div class="p30">
+                        <h1>Request a worker</h1>
+                        <br>
+                        <form action="/quote_vendor" method="post">
+                            <h3>Experience</h3>
+                            <div class="form-group">
+                                <div class="va_middle">
+                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect block-radio" for="option-1">
+                                        <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
+                                        <span class="mdl-radio__label">Mechanic</span>
+                                    </label>
+                                    <br>
+                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+                                        <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2" checked>
+                                        <span class="mdl-radio__label">4yr Apprentice</span>
+                                    </label>
+                                    <br>
+                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-3">
+                                        <input type="radio" id="option-3" class="mdl-radio__button" name="options" value="3" checked>
+                                        <span class="mdl-radio__label">3yr Apprentice</span>
+                                    </label>
+                                    <br>
+                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-4">
+                                        <input type="radio" id="option-4" class="mdl-radio__button" name="options" value="4" checked>
+                                        <span class="mdl-radio__label">2yr Apprentice</span>
+                                    </label>
+                                </div>
+                                <br>
+                            </div>
+                            <h3>Category</h3>
+                            <div class="form-group">
+                                <div class="va_middle">
+                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-5">
+                                        <input type="radio" id="option-5" class="mdl-radio__button" name="options" value="5" checked>
+                                        <span class="mdl-radio__label">Heavy and Light Vehicle</span>
+                                    </label>
+                                    <br>
+                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-6">
+                                        <input type="radio" id="option-6" class="mdl-radio__button" name="options" value="6" checked>
+                                        <span class="mdl-radio__label">Heavy Vehicle</span>
+                                    </label>
+                                    <br>
+                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-7">
+                                        <input type="radio" id="option-7" class="mdl-radio__button" name="options" value="7" checked>
+                                        <span class="mdl-radio__label">Light Vehicle</span>
+                                    </label>
+                                </div>
+                                <br>
+                            </div>
+                            <h3>Requirements</h3>
+                            <div class="form-group">
+                                <div class="va_middle">
+                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-8">
+                                        <input type="radio" id="option-8" class="mdl-radio__button" name="options" value="8" checked>
+                                        <span class="mdl-radio__label">Manual drivers licence</span>
+                                    </label>
+                                    <br>
+                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-9">
+                                        <input type="radio" id="option-9" class="mdl-radio__button" name="options" value="9" checked>
+                                        <span class="mdl-radio__label">Automatic drivers licence only</span>
+                                    </label>
+                                    <br>
+                                </div>
+                                <br>
+                            </div>
+                            <h3>Duration</h3>
+                            <div class="form-group">
+                                <div class="va_middle">
+                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-10">
+                                        <input type="radio" id="option-10" class="mdl-radio__button" name="options" value="10" checked>
+                                        <span class="mdl-radio__label">Full day</span>
+                                    </label>
+                                    <br>
+                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-11">
+                                        <input type="radio" id="option-11" class="mdl-radio__button" name="options" value="11" checked>
+                                        <span class="mdl-radio__label">Half day - afternoons</span>
+                                    </label>
+                                    <br>
+                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-11">
+                                        <input type="radio" id="option-11" class="mdl-radio__button" name="options" value="11" checked>
+                                        <span class="mdl-radio__label">Half day - mornings</span>
+                                    </label>
+                                    <br>
+                                </div>
+                                <br>
+                            </div>
+                            <div class="form-group">
+                            <label for="worker_cost">Rate per hour</label>
+                            <br>
+                            <input class="mdl-slider mdl-js-slider" type="range"
+                                   min="0" max="100" value="25" step="2" tabindex="0" id="demo">
+                            </div>
+
+                            <button type="submit" class="block2-btn-primary">REQUEST</button>
+                            <br>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="mdl-cell mdl-cell--6-col"></div>
+        </div>
+
+
+        <!-- Your content goes here -->
+    </div>
+</main>
+
+<!-- this final div closes off the div started in the header.hbs -->
+</div>
+
+<script type="text/javascript" src="../../javascripts/accordion.js"></script>
+
+
