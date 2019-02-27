@@ -8,6 +8,7 @@ var userSchema = new Schema({
     password: { type: String, required: true },
     first_name: {type: String},
     last_name: {type: String},
+    rank: {type: String},
     membership_number: {type: String},
     imagePath: {type: String},
     description: {type: String},
@@ -30,6 +31,7 @@ var userSchema = new Schema({
     licence_two: {type: String},
     licence_three: {type: String},
     licence_four: {type: String},
+    site: {type: Schema.Types.ObjectId, ref: 'Site'}, //store id from the site model
     // portfolios:[{type: Schema.Types.ObjectId,
     //     ref: 'Portfolio' }],
     resetPasswordToken: String,

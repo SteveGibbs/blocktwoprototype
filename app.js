@@ -12,6 +12,7 @@ var session = require('express-session');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var async = require('async');
+var $ = require("jquery");
 var crypto = require('crypto');
 var flash = require('connect-flash');
 var validator = require('express-validator');

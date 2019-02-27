@@ -75,6 +75,7 @@ router.post('/profile-details', function(req, res, next){
         email: req.body.email,
         first_name: req.body.first_name,
         last_name: req.body.last_name,
+        rank: req.body.rank,
         membership_number: req.body.membership_number,
         imagePath: req.body.imagePath,
         description: req.body.description,
@@ -82,7 +83,8 @@ router.post('/profile-details', function(req, res, next){
         home_address_line2: req.body.home_address_line2,
         postal_code: req.body.postal_code,
         address_state: req.body.address_state,
-        address_country: req.body.address_country
+        address_country: req.body.address_country,
+        site: req.body.site
 
     };
 

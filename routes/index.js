@@ -73,13 +73,70 @@ router.get('/site/:id/equipment', function(req, res, next){
   var result = {};
   //assert.equal(null, err);
   var getObject = function() {
-    Equipment.find(function (err, doc) {
+
+    // User.findById(req.user.id, function (err, user){
+    //   var projects = {};
+    //   Portfolio.find({user: req.user}, function (err, docs) {
+    //     projects = docs;
+
+    Site.findById({'_id': objectId(uniqueid)}, function (err, doc) {
+      //    Site.findById(req.site.id, function (err, doc){
       //assert.equal(null, err);
-      console.log("this is the" + uniqueid);
+      console.log('item found');
+      console.log("this is the unique id of the site" + uniqueid);
       console.log(doc);
-      // console.log(doc.title);
+      console.log(doc.title);
       result = doc;
-      res.render('site/equipment', {item: result});
+
+      var equipments = {};
+      Equipment.find({site: objectId(uniqueid)}, function(err, doc) {
+        console.log("THIS IS THE REQ.SITE" + req.equipment_name);
+        console.log("this is the equipments unique id" + uniqueid);
+        equipments = doc;
+        console.log("yes this is" + equipments);
+//             res.render('site/about', {sites: productChunks, successMsg: successMsg, noMessages: !successMsg, equipment_item: equipments});
+//         })
+
+        res.render('site/equipment', {item: result, equipment_item: equipments});
+      })
+    });
+  };
+  getObject();
+});
+
+// router.get('/site/:id/equipment', function(req, res, next){
+//   var uniqueid = req.params.id;
+//   var result = {};
+//   //assert.equal(null, err);
+//   var getObject = function() {
+//     Equipment.find(function (err, doc) {
+//       //assert.equal(null, err);
+//       console.log("this is the" + uniqueid);
+//       console.log(doc);
+//       // console.log(doc.title);
+//       result = doc;
+//       res.render('site/equipment', {item: result});
+//     });
+//   };
+//   getObject();
+// });
+
+router.get('/site/:id/resources', function(req, res, next){
+  var uniqueid = req.params.id;
+  var result = {};
+
+  var getObject = function() {
+    Site.findById({'_id': objectId(uniqueid)}, function (err, doc) {
+      result = doc;
+
+      var users = {};
+      User.find({site: objectId(uniqueid)}, function(err, doc) {
+        users = doc;
+        console.log("yes this is" + users);
+
+
+        res.render('site/resources', {item: result, user_item: users});
+      })
     });
   };
   getObject();

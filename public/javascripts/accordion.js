@@ -15,6 +15,9 @@ for (i = 0; i < acc.length; i++) {
     };
 }
 
+// let x = document.getElementsByClassName("accordion");
+// x[0].className += " hide";
+// console.log(x);
 
 const demoInput = document.getElementById('demo');
 const labelMaker = function (e) {
