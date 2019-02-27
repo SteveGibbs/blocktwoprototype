@@ -4,151 +4,57 @@
     <div class="page-content">
         <div class="mdl-grid">
 
-        <div class="mdl-cell mdl-cell--6-col">
-            <div class="about-rectangle">
-                <div class="p15">
-                    <h2>Group Overview</h2>
-                    <div class="inline">
-                        {{#each sites}}
+            <div class="mdl-cell mdl-cell--6-col">
+                <div class="about-rectangle">
+                    <div class="p15">
+                        <h2>Group Overview</h2>
+
+                        {{item.first_name}} {{item.last_name}}
+                        <div class="inline">
+                            {{#each sites}}
+                                    {{#each this}}
+                                        <img src="{{site_imagePath}}" alt="" class="image-about">
+                                        <br>
+                                    {{/each}}
+                            {{/each}}
+                        </div>
+                        <br>
+                        <div class="inline">
+                            {{#each sites}}
                                 {{#each this}}
-                                    <img src="{{site_imagePath}}" alt="" class="image-about">
+                                    <div class="w150"><a href="/site/{{id}}">{{site_name}}</a></div>
+
                                     <br>
                                 {{/each}}
-                        {{/each}}
-                    </div>
-                    <br>
-                    <div class="inline">
-                        {{#each sites}}
-                            {{#each this}}
-                                <div class="w150"><a href="/site/{{id}}">{{site_name}}</a></div>
-
-                                <br>
                             {{/each}}
-                        {{/each}}
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="mdl-cell mdl-cell--1-col"></div>
-        <div class="mdl-cell mdl-cell--5-col">
-            <form action="/insert_site" method="post">
-                <div class="form-group">
-                    <label for="site_name">Site</label>
-                    <br>
-                    <input type="text" id="site_name" name="site_name" value="{{item.site_name}}" class="mdl-button block-button">
-                </div>
-                <div class="form-group">
-                    <label for="site_description">Description</label>
-                    <br>
-                    <input type="textarea" id="site_description" name="site_description" value="{{item.site_description}}" rows="6" class="mdl-button block-area">
-                </div>
-                <div class="form-group">
-                    <label for="site_imagePath">Image</label>
-                    <br>
-                    <input type="text" id="site_imagePath" name="site_imagePath" value="{{item.site_imagePath}}" class="mdl-button block-button">
-                </div>
-                <button type="submit" class="block2-btn-primary">Add project</button>
-            </form>
-        </div>
-
-
-
-</div>
-        <div class="mdl-grid">
             <div class="mdl-cell mdl-cell--6-col">
-
-            </div>
-            <div class="mdl-cell mdl-cell--6-col"></div>
-        </div>
-
-        <div class="mdl-grid">
-            <div class="mdl-cell mdl-cell--6-col">
-                <div class="about-rectangle">
-                    <div class="p15">
-                        <h3>About</h3>
-                        <hr>
-                        {{item.description}}
-                    </div>
+                <div class="ml5vw">
+                    <form action="/insert_site" method="post">
+                        <div class="form-group">
+                            <label for="site_name">Site</label>
+                            <br>
+                            <input type="text" id="site_name" name="site_name" value="{{item.site_name}}" class="mdl-button block-button">
+                        </div>
+                        <div class="form-group">
+                            <label for="site_description">Description</label>
+                            <br>
+                            <input type="textarea" id="site_description" name="site_description" value="{{item.site_description}}" rows="6" class="mdl-button block-area">
+                        </div>
+                        <div class="form-group">
+                            <label for="site_imagePath">Image</label>
+                            <br>
+                            <input type="text" id="site_imagePath" name="site_imagePath" value="{{item.site_imagePath}}" class="mdl-button block-button">
+                        </div>
+                        <button type="submit" class="block2-btn-primary">Add project</button>
+                    </form>
                 </div>
 
             </div>
-            <div class="mdl-cell mdl-cell--6-col"></div>
         </div>
-
-        <div class="mdl-grid">
-            <div class="mdl-cell mdl-cell--6-col">
-                <div class="about-rectangle">
-                    <div class="p15">
-                        <h3>Portfolio</h3>
-                        <hr>
-                        {{#each project_item}}
-                            <div class="inline">
-                                <img src="{{portfolio_one_imagePath}}" alt="" class="image-about">
-                            </div>
-                        {{/each}}
-                        <br>
-                        <br>
-                        {{#each project_item}}
-                            <div class="inline w150">
-                                <a href="/data/{{id}}">{{portfolio_title}}</a>
-                            </div>
-                        {{/each}}
-                        <hr>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="mdl-cell mdl-cell--6-col"></div>
-    </div>
-
-    <div class="mdl-grid">
-        <div class="mdl-cell mdl-cell--6-col">
-            <div class="about-rectangle">
-                <div class="p15">
-                    <h3>Experience and Key Accomplishments</h3>
-                    <hr>
-                    {{item.description}}
-                </div>
-            </div>
-        </div>
-        <div class="mdl-cell mdl-cell--6-col"></div>
-    </div>
-
-    <div class="mdl-grid">
-        <div class="mdl-cell mdl-cell--6-col">
-            <div class="about-rectangle">
-                <div class="p15">
-                    <h3>Skills and Qualifications</h3>
-                    <hr>
-                    {{item.provider_one}}  {{item.qualification_one}}
-                    <br>
-                    {{item.provider_two}}  {{item.qualification_two}}
-                    <br>
-                    {{item.provider_three}}  {{item.qualification_three}}
-                    <br>
-                    {{item.provider_four}}  {{item.qualification_four}}
-                </div>
-            </div>
-        </div>
-        <div class="mdl-cell mdl-cell--6-col"></div>
-    </div>
-
-    <div class="mdl-grid">
-        <div class="mdl-cell mdl-cell--6-col">
-            <div class="about-rectangle">
-                <div class="p15">
-                    <h3>Licences and Visas</h3>
-                    <hr>
-                    {{item.visa_status}}
-                    <br>
-                    {{item.licence_one}}  {{item.licence_one_expiry}}
-                    <br>
-                    {{item.licence_two}}
-                </div>
-            </div>
-        </div>
-        <div class="mdl-cell mdl-cell--6-col"></div>
-    </div>
 
     <!-- Your content goes here -->
     </div>
