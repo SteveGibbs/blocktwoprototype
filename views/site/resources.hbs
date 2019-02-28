@@ -9,14 +9,32 @@
                 <div class="about-rectangle">
                     <div class="p15">
                         <h2>Site Resources</h2>
-                        {{#each user_item}}
-                            <p>{{first_name}} {{last_name}}</p>
-                            <p>{{rank}}</p>
-                        <div class="image-cropper">
-                            <img src="{{imagePath}}" alt="" class="portrait">
+                        <div class="inline">
+                            {{#each user_item}}
+                                <p class="w150">{{first_name}} {{last_name}}</p>
+                            {{/each}}
+                            </div>
+                        <br>
+                        <div class="inline">
+                            {{#each user_item}}
+                                <br>
+                                <p class="w150">{{rank}}</p>
+                            {{/each}}
+                        </div>
+                        <br>
+                        <div class="inline">
+                            {{#each user_item}}
+                                <div class="w150">
+                                    <div class="image-cropper">
+                                        <img src="{{imagePath}}" alt="" class="portrait">
+                                    </div>
+                                </div>
+
+                            {{/each}}
                         </div>
 
-                        {{/each}}
+                        </div>
+
 
                     </div>
                 </div>
