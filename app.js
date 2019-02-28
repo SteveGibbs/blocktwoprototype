@@ -31,6 +31,7 @@ var app = express();
 
 //mongoose.connect(process.env.MONGODB_URI || 'localhost:27017/blocktwo');
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/blocktwo", { useNewUrlParser: true });
+mongoose.connection.on('error', console.error.bind(console, "Mongo error:"));
 
 
 require('./config/passport');
