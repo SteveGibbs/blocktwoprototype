@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="600e58db-8efd-4723-bbd4-3fd73afb5058" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/models/vendorquote.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/quote.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/quote.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/site/request.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/site/request.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/site/site.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/site/site.hbs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +22,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="228">
@@ -35,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/site/site.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="107" column="26" lean-forward="true" selection-start-line="104" selection-start-column="20" selection-end-line="107" selection-end-column="26" />
+            <state relative-caret-position="165">
+              <caret line="28" column="69" selection-start-line="28" selection-start-column="69" selection-end-line="28" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -189,7 +185,6 @@
         <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/public/javascripts/accordion.js" />
-        <option value="$PROJECT_DIR$/views/site/site.hbs" />
         <option value="$PROJECT_DIR$/models/user.js" />
         <option value="$PROJECT_DIR$/views/user/about.hbs" />
         <option value="$PROJECT_DIR$/views/user/profile.hbs" />
@@ -202,6 +197,7 @@
         <option value="$PROJECT_DIR$/models/vendorquote.js" />
         <option value="$PROJECT_DIR$/views/site/request.hbs" />
         <option value="$PROJECT_DIR$/routes/index.js" />
+        <option value="$PROJECT_DIR$/views/site/site.hbs" />
       </list>
     </option>
   </component>
@@ -356,15 +352,16 @@
       <workItem from="1550203937611" duration="873000" />
       <workItem from="1550204917021" duration="8709000" />
       <workItem from="1550370057702" duration="29701000" />
-      <workItem from="1550622503019" duration="92485000" />
+      <workItem from="1550622503019" duration="93127000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="283328000" />
+    <option name="totallyTimeSpent" value="283970000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="126" y="23" width="1545" height="829" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19893546" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -670,13 +667,6 @@
     <entry file="file://$PROJECT_DIR$/models/site.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/site/site.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="107" column="26" lean-forward="true" selection-start-line="104" selection-start-column="20" selection-end-line="107" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/vendorquote.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -695,6 +685,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="370" column="24" lean-forward="true" selection-start-line="370" selection-start-column="24" selection-end-line="370" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/site/site.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="28" column="69" selection-start-line="28" selection-start-column="69" selection-end-line="28" selection-end-column="69" />
         </state>
       </provider>
     </entry>
