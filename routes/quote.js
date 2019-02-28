@@ -4,7 +4,7 @@ var router = express.Router();
 /* GET users listing. */
 router.get('/', function(req, res, next) {
     // res.send('respond with a resource');
-    res.render('quote', { title: 'Express' });
+    res.render('quote', { title: 'Block2' });
 
 });
 

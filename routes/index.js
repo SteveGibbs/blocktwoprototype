@@ -5,13 +5,14 @@ var User = require('../models/user');
 var Portfolio = require('../models/portfolio');
 var Site = require('../models/site');
 var Equipment = require('../models/equipment');
+var Vendorquote = require('../models/vendorquote');
 
 //var url = process.env.MONGODB_URI;
 var url = 'localhost:27017/blocktwo';
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: '?' });
+  res.render('index', { title: 'Block2' });
 });
 
 router.get('/data/:id', function(req, res, next){
@@ -143,10 +144,17 @@ router.get('/site/:id/resources', function(req, res, next){
 });
 
 router.get('/site/:id/request', function(req, res, next){
-
-      res.render('site/request');
-
-});
+    var uniqueid = req.params.id;
+    var result = {};
+    var getObject = function() {
+    Site.findById({'_id': objectId(uniqueid)}, function (err, doc) {
+      console.log(doc);
+      result = doc;
+      res.render('site/request', {item: result});
+    });
+  };
+    getObject();
+  });
 
 
 router.post('/update_site', function(req, res, next){
@@ -345,6 +353,39 @@ router.post('/insert_equipment', function(req, res, next) {
       console.log('item inserted');
       console.log(item);
       console.log(equipmentId);
+
+      res.redirect('/site');
+    });
+
+  };
+  insertObject();
+});
+
+
+router.post('/quote_vendor', function(req, res, next) {
+
+  var vendorquoteId = req.body._id;
+  console.log("this is the vendorquote id" + vendorquoteId);
+
+  var item = {
+    site: req.body.site,
+    quote_experience: req.body.quote_experience,
+    quote_category: req.body.quote_category,
+    quote_requirements: req.body.quote_requirements,
+    quote_duration: req.body.quote_duration,
+    quote_rate: req.body.quote_rate
+  };
+
+  var vendorquotes = new Vendorquote(item);
+
+
+  var insertObject = function() {
+    //assert.equal(null, err);
+    vendorquotes.save(item, function (err, result) {
+      // assert.equal(null, err);
+      console.log('item inserted');
+      console.log(item);
+      console.log(vendorquoteId);
 
       res.redirect('/site');
     });

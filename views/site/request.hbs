@@ -13,22 +13,22 @@
                             <div class="form-group">
                                 <div class="va_middle">
                                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
-                                        <input type="radio" id="option-1" class="mdl-radio__button" name="quote_experience" value="1">
+                                        <input type="radio" id="option-1" class="mdl-radio__button" name="quote_experience" value="Mechanic">
                                         <span class="mdl-radio__label">Mechanic</span>
                                     </label>
                                     <br>
                                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
-                                        <input type="radio" id="option-2" class="mdl-radio__button" name="quote_experience" value="2">
+                                        <input type="radio" id="option-2" class="mdl-radio__button" name="quote_experience" value="4yr Apprentice">
                                         <span class="mdl-radio__label">4yr Apprentice</span>
                                     </label>
                                     <br>
                                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-3">
-                                        <input type="radio" id="option-3" class="mdl-radio__button" name="quote_experience" value="3">
+                                        <input type="radio" id="option-3" class="mdl-radio__button" name="quote_experience" value="3yr Apprentice">
                                         <span class="mdl-radio__label">3yr Apprentice</span>
                                     </label>
                                     <br>
                                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-4">
-                                        <input type="radio" id="option-4" class="mdl-radio__button" name="quote_experience" value="4">
+                                        <input type="radio" id="option-4" class="mdl-radio__button" name="quote_experience" value="2yr Apprentice">
                                         <span class="mdl-radio__label">2yr Apprentice</span>
                                     </label>
                                 </div>
@@ -38,17 +38,17 @@
                             <div class="form-group">
                                 <div class="va_middle">
                                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-5">
-                                        <input type="radio" id="option-5" class="mdl-radio__button" name="quote_category" value="5">
+                                        <input type="radio" id="option-5" class="mdl-radio__button" name="quote_category" value="Heavy and Light Vehicle">
                                         <span class="mdl-radio__label">Heavy and Light Vehicle</span>
                                     </label>
                                     <br>
                                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-6">
-                                        <input type="radio" id="option-6" class="mdl-radio__button" name="quote_category" value="6">
+                                        <input type="radio" id="option-6" class="mdl-radio__button" name="quote_category" value="Heavy Vehicle">
                                         <span class="mdl-radio__label">Heavy Vehicle</span>
                                     </label>
                                     <br>
                                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-7">
-                                        <input type="radio" id="option-7" class="mdl-radio__button" name="quote_category" value="7">
+                                        <input type="radio" id="option-7" class="mdl-radio__button" name="quote_category" value="Light Vehicle">
                                         <span class="mdl-radio__label">Light Vehicle</span>
                                     </label>
                                 </div>
@@ -58,12 +58,12 @@
                             <div class="form-group">
                                 <div class="va_middle">
                                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-8">
-                                        <input type="radio" id="option-8" class="mdl-radio__button" name="quote_requirements" value="8">
+                                        <input type="radio" id="option-8" class="mdl-radio__button" name="quote_requirements" value="Manual Driver Licence">
                                         <span class="mdl-radio__label">Manual drivers licence</span>
                                     </label>
                                     <br>
                                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-9">
-                                        <input type="radio" id="option-9" class="mdl-radio__button" name="quote_requirements" value="9">
+                                        <input type="radio" id="option-9" class="mdl-radio__button" name="quote_requirements" value="Automatic Driver Licence">
                                         <span class="mdl-radio__label">Automatic drivers licence only</span>
                                     </label>
                                     <br>
@@ -74,17 +74,17 @@
                             <div class="form-group">
                                 <div class="va_middle">
                                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-10">
-                                        <input type="radio" id="option-10" class="mdl-radio__button" name="quote_duration" value="10">
+                                        <input type="radio" id="option-10" class="mdl-radio__button" name="quote_duration" value="Full day">
                                         <span class="mdl-radio__label">Full day</span>
                                     </label>
                                     <br>
                                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option- 11">
-                                        <input type="radio" id="option-11" class="mdl-radio__button" name="quote_duration" value="11">
+                                        <input type="radio" id="option-11" class="mdl-radio__button" name="quote_duration" value="Afternoons">
                                         <span class="mdl-radio__label">Half day - afternoons</span>
                                     </label>
                                     <br>
                                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-12">
-                                        <input type="radio" id="option-12" class="mdl-radio__button" name="quote_duration" value="12">
+                                        <input type="radio" id="option-12" class="mdl-radio__button" name="quote_duration" value="Mornings">
                                         <span class="mdl-radio__label">Half day - mornings</span>
                                     </label>
                                     <br>
@@ -95,7 +95,11 @@
                             <label for="worker_cost">Rate per hour</label>
                             <br>
                             <input class="mdl-slider mdl-js-slider" type="range"
-                                   min="0" max="100" value="25" step="2" tabindex="0" id="demo">
+                                   min="0" max="100" value="25" step="2" tabindex="0" name="quote_rate" id="demo">
+                            </div>
+                            <div class="form-group">
+                                <label for="site">Site Id</label>
+                                <input type="text" class="form-control" id="site" name="site" value="{{item.id}}">
                             </div>
 
                             <button type="submit" class="block2-btn-primary">REQUEST</button>
