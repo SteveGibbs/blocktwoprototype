@@ -23,7 +23,7 @@
     "hbs": "^4.0.2",
     "http-errors": "~1.6.2",
     "jquery": "^3.4.0",
-    "jsdom": "^13.2.0",
+    "jsdom": "^16.5.0",
     "material-components-web": "^0.43.1",
     "material-design-icons": "^3.0.1",
     "mongoose": "^5.4.8",
